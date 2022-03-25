@@ -1,0 +1,20 @@
+{
+	"events": [{
+		"about": [
+			"verbrena",
+			"fira",
+			"concert"
+		],
+		"startDate": "2022-03-24",
+		"endDate": "2022-03-24",
+		"location": "Binissalem",
+		"organizer": "Ajuntament de Binissalem",
+		"performer": [
+			"Pirates Pirats",
+			"La canción del verano"
+		],
+		"identifier": "1",
+		"descriptioin": "Les Festes del Vermar o Sa Vermada, és la festa més popular del poble de Binissalem. Tots els pagesos o vermadors van a les vinyes a vermar i a trepitjar raïm.",
+		"name": "Les Festes del Vermar o Sa Vermada"
+	}]
+}
