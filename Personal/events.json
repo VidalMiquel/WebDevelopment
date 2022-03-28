@@ -36,6 +36,22 @@
 			"name": "Festa de ses Clovelles",
 			"programa": null
 		}
-
 	]
 }
+
+
+"event" : {
+	"type": string, // "fira", "verbena", "concert"
+	"startDate": date format yyyy-mm-dd,
+	"endDate": date format yyyy-mm-dd,
+	"location": string ,
+	"organizer": string,
+	"descriptioin": string,
+	"name": string,
+	"program": string, // path to local file
+	"mainmage": string, // path to local image
+	"gallery" : [images: string] || null, //path to local image
+	"socialnetworks" : {
+			"hastag": string //social network filter
+	}
+ }
