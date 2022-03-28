@@ -306,6 +306,7 @@ section.section-show {
   top: 100px;
   bottom: auto;
   opacity: 1;
+  padding-bottom: 45px;
 }
 section .container {
   background: white;
