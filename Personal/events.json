@@ -1,5 +1,6 @@
 {
-	"events": [{
+	"events": [
+		{
 			"about": "fira",
 			"startDate": "2022-03-24",
 			"endDate": "2022-03-25",
@@ -10,7 +11,6 @@
 			"descriptioin": "Les Festes del Vermar o Sa Vermada, és la festa més popular del poble de Binissalem. Tots els pagesos o vermadors van a les vinyes a vermar i a trepitjar raïm.",
 			"name": "Les Festes del Vermar o Sa Vermada",
 			"programa": null
-
 		},
 		{
 			"about": "verbena",
@@ -40,7 +40,7 @@
 }
 
 
-"event" : {
+"event": {
 	"type": string, // "fira", "verbena", "concert"
 	"startDate": date format yyyy-mm-dd,
 	"endDate": date format yyyy-mm-dd,
@@ -50,8 +50,9 @@
 	"name": string,
 	"program": string, // path to local file
 	"mainmage": string, // path to local image
-	"gallery" : [images: string] || null, //path to local image
-	"socialnetworks" : {
-			"hastag": string //social network filter
+	"gallery": [images: string
+	] || null, //path to local image
+	"socialnetworks": {
+		"hastag": string //social network filter
 	}
- }
+}
