@@ -338,7 +338,8 @@ section .container {
   background-color: #efefef;
   color: black;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
+  padding-bottom: 10px;
   margin: 0;
   font-size: 36px;
   font-weight: 700;
@@ -387,7 +388,6 @@ section .container {
 }
 .textSeccio2About{
   text-align: center;
-  font-weight: bold;
   font-size: 20px ;
 }
 
@@ -399,7 +399,7 @@ section .container {
 
 .services .icon-box {
   text-align: center;
-  background-color: red; 
+  background-color: withe; 
   padding: 40px 20px;
   transition: all ease-in-out 0.3s;
 }
@@ -416,7 +416,7 @@ section .container {
   transform-style: preserve-3d;
 }
 .services .icon-box .icon i {
-  color: #fff;
+  color: black;
   font-size: 28px;
 }
 
@@ -426,7 +426,7 @@ section .container {
   font-size: 24px;
 }
 .services .icon-box h4 a {
-  color: #fff;
+  color: black;
 }
 .services .icon-box p {
   line-height: 24px;
@@ -434,7 +434,7 @@ section .container {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #18d26e;
+  background: #efefef;
 }
 
 /* --- button --- */
@@ -457,7 +457,7 @@ a.btn:focus{
 }
 
 .btn-skin{
-  background-color: yellow;
+  background-color: #FFC700;
   margin: 20px;
 }
 .btn-skin:hover,
@@ -720,9 +720,10 @@ a.btn:focus{
 }
 
 #titolSeccio2Calendari{
-  padding: 30px;
+  padding: 10px;
   font-family: 'Montserrat';
   background-color: #efefef;
+  padding-bottom: 20px;
 }
 .textSeccio1Calendari{
   text-align: center;
@@ -736,19 +737,5 @@ a.btn:focus{
   padding-bottom: 50px;
   background-color: #efefef;
 
-}
-
-#boto{
-  background-color: #FFC700;
-}
-
-.titolFormulari{
-  min-width: 100%;
-  background-color: #ffeaa1;
-  color: black;
-  text-align: center;
-  padding: 50px;
-  margin: 0;
-  margin: -15px 0 15px 0;
 }
 
