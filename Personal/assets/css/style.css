@@ -748,21 +748,15 @@ a.btn:focus{
 
 .GoogleMaps{
   background-color: green;
-  min-width: 100%;
-  max-width: 100%;
   min-height: 100px;
 }
 
 .Tiempo{
   background-color: red;
-  min-width: 100%;
-  max-width: 100%;
   min-height: 100px;
 }
 
-.xarxesSocilas{
+.xarxesSocials{
   background-color: blue;
-  min-width: 100%;
-  max-width: 100%;
   min-height: 200px;
 }
