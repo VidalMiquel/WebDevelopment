@@ -347,6 +347,18 @@ section .container {
   font-family: "Poppins", sans-serif;
 }
 
+.section-title-informacio {
+  min-width: 100%;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
 .section-title p {
   font-size: 36px;
   font-weight: 700;
@@ -608,6 +620,7 @@ a.btn:focus{
   right: 15px;
 }
 
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -734,7 +747,6 @@ a.btn:focus{
 .textSeccio2Calendari{
   text-align: center;
   font-size: 20px ;
-  padding-bottom: 50px;
   background-color: #efefef;
 
 }
@@ -759,4 +771,9 @@ a.btn:focus{
 .xarxesSocials{
   background-color: blue;
   min-height: 200px;
+}
+
+
+#formulari{
+  background-color: #efefef;
 }
