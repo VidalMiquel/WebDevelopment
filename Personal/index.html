@@ -12,12 +12,9 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+  <script src="assets/js/eventsloader.js" language="javascript" ></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,14 +37,12 @@
   <!-- Icons font CSS-->
   <link href="formulari/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
   <link href="formulari/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-  <!-- Font special for pages-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet">
 
   <!-- Vendor CSS-->
   <link href="formulari/vendor/select2/select2.min.css" rel="stylesheet" media="all">
   <link href="formulari/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
   <link href="formulari/css/main.css" rel="stylesheet" media="all">
+
 </head>
 
 <body>
@@ -143,60 +138,7 @@
         </div>
       </div>
 
-      <div class="row services pb-4 pt-4 mb-4">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="shadow icon-box">
-            <div class="icon"><i class="bi bi-geo"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            <a href="#" class="btn btn-skin btn--radius-2">Learn more</a>
-          </div>
-        </div>
+      <div class="row services pb-4 pt-4 mb-4" id="events">
 
       </div>
 
@@ -575,6 +517,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 

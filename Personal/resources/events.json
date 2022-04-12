@@ -1,4 +1,4 @@
-{
+var jsonEvents = {
 	"event": [
 		{
 			"@type": "fira",
@@ -60,7 +60,7 @@
 			"organizer": null,
 			"description": "El Rock’n Rostoll és un festival que amb els anys ha anat augmentant la seva popularitat. Actualement, conta amb dos espais de música ben diferenciats. En primer lloc, l’escenari de rock. I en segon lloc, el safareig, imatge representativa del festival mariando.",
 			"name": "Rock’n Rostoll",
-			"program": null, 
+			"program": null,
 			"primaryImageOfPage": null,
 			"datos-extra": {
 				"socialnetworks": {
