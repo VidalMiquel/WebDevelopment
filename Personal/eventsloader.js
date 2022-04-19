@@ -52,7 +52,7 @@ function introduirLogo() {
     //Cream l'icone d'instagram
     const logoPaginaWeb = document.createElement('a');
     const svgLogo = document.createElement('img');
-    logoPaginaWeb.href = "home.html";
+    logoPaginaWeb.href = "index.html";
     svgLogo.src = "logo.svg";
     svgLogo.className = "image-fluid";
     logoPaginaWeb.appendChild(svgLogo);
@@ -62,20 +62,6 @@ function introduirLogo() {
 
 
 
-
-var url = "event.html";
-function load(url,callback){
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4){
-            callback(xhr.response);
-        }
-    }
-    xhr.open('GET',url,true);
-    xhr.send('');
-}
-
-load((url), callback = () => {});
 introduirXarxes();
 introduirLogo();
 
