@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <title>Miquel Vidal Cortes</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="formulari/css/main.css" rel="stylesheet" media="all">
+    <!-- =======================================================
+  * Template Name: Personal - v4.7.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="assets/css/estil.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="capcalera" class="sticky-top">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 ">
+                <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" id="logo">
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="home.html" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="quiSom.html" class="nav-link">Qui som</a></li>
+                    <li class="nav-item"><a href="esdeveniments.html" class="nav-link">Esdeveniments</a></li>
+                    <li class="nav-item"><a href="cercador.html" class="nav-link">Cercador</a></li>
+                </ul>
+            </header>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1>Proxims Esdeveniments</h1>
+            </div>
+
+            <div class="col-lg-12 pt-4 pt-lg-0 content text-center" data-aos="fade-left">
+                <h3 id="titolSeccio1Calendari">6 pròxims events!</h3>
+                <p class="textSeccio1Calendari">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <div class="row services pb-4 pt-4 mb-4" id="events"></div>
+
+        <div class="row" id="formulari">
+            <div class="section-title-formulari mt-4 pt-4">
+                <h1>Formulari</h1>
+            </div>
+
+            <div class="col-lg-12 content text-center" data-aos="fade-left">
+                <h3 id="titolSeccio2Calendari">Afegeix un esdeveniment!</h3>
+                <p class="textSeccio2Calendari">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="col-lg-12 pt-lg-0 content" data-aos="fade-left">
+                <div class="p-t-45 p-b-50">
+                    <div class="wrapper wrapper--w790">
+                        <div class="card card-5">
+                            <div class="card-heading">
+                                <h2 class="title">Afegir Event</h2>
+                            </div>
+                            <div class="card-body">
+                                <form method="POST">
+                                    <div class="form-row">
+                                        <div class="name">Nom de l'esdeveniment</div>
+                                        <div class="value">
+                                            <div class="input-group">
+                                                <input class="input--style-5" type="text" name="company"
+                                                    placeholder="Introudeix nom de l'event">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Organitzador</div>
+                                        <div class="value">
+                                            <div class="input-group">
+                                                <input class="input--style-5" type="text" name="company"
+                                                    placeholder="Introdueix nom de l'organitzador">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Email</div>
+                                        <div class="value">
+                                            <div class="input-group">
+                                                <input class="input--style-5" type="email" name="email"
+                                                    placeholder="Introdueix email de contacte">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row col-lg-12">
+                                        <div class="col-lg-6" data-aos="fade-right">
+                                            <div class="name">Dia inici</div>
+                                            <input type="date" id="finish" name="trip-start">
+                                        </div>
+                                        <div class="col-lg-6" data-aos="fade-left">
+                                            <div class="name">Dia fi</div>
+                                            <input type="date" id="finish" name="trip-start">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Telèfon</div>
+                                        <div class="value">
+                                            <div class="col-12">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="phone"
+                                                        placeholder="Introdueix telèfon de contacte">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Tipus</div>
+                                        <div class="value">
+                                            <div class="rs-select2 js-select-simple select--no-search">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example">
+                                                    <option selected>Selecciona</option>
+                                                    <option value="1">Fira</option>
+                                                    <option value="2">Verbena</option>
+                                                    <option value="3">Concert</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Programa</div>
+                                        <div class="mb-3">
+                                            <input class="form-control " type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="name">Descripció</div>
+                                        <div class="value">
+                                            <div class="form-group">
+                                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1"
+                                                    placeholder="Introdueix una breu descripcó de l'esdeveniment"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class=" btn btn-skin btn--radius-2 ">Enviar Formulari</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="text-center col-lg-6">
+                <ul class="nav justify-content-center border-bottom p-3" id="xarxes">
+                </ul>
+            </div>
+            <div class="text-center col-lg-6 border-bottom">
+            </div>
+            <p class="text-center text-muted p-3">© 2022 MallorcaEvents</p>
+        </div>
+    </footer>
+    <script src="eventsloader.js" language="javascript"></script>
+
+
+
+
+</body>
+
+</html>
