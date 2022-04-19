@@ -1,0 +1,187 @@
+.container {
+    min-width: 100%;
+}
+
+/*TITOLS DE SECCIO*/
+
+.section-title {
+    min-width: 100%;
+    background-color: #ffeaa1;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    top: 0;
+}
+
+
+
+/*SECCIÓ QUI SOM */
+#titolSeccio2About {
+    padding: 30px;
+    font-family: 'Montserrat';
+    text-align: center;
+
+}
+
+#textSeccio2About {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*BODY*/
+
+
+
+
+/*ESDEVENIMENTS*/
+#titolSeccio1Calendari {
+    padding: 30px;
+    font-family: 'Montserrat';
+}
+
+.section-title-formulari {
+    color: black;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+
+#titolSeccio2Calendari {
+    padding: 10px;
+    font-family: 'Montserrat';
+    background-color: #efefef;
+    padding-bottom: 20px;
+}
+
+
+.textSeccio2Calendari {
+    text-align: center;
+    font-size: 20px;
+    background-color: #efefef;
+}
+
+#formulari {
+    background-color: #efefef;
+}
+
+/* BOTONS */
+.btn {
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+a.btn:focus {
+    outline: 0;
+}
+
+.btn-skin {
+    background-color: #FFC700;
+    margin: 20px;
+}
+
+.btn-skin:hover,
+.btn-skin:focus,
+.btn-skin:active,
+.btn-skin.active {
+    color: #fff;
+    background-color: #666;
+    border-color: #666;
+}
+
+
+
+
+/*CERCADOR*/
+
+.icon-box {
+    text-align: center;
+    background-color: withe;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+}
+
+.icon-box .icon i {
+    color: black;
+    font-size: 28px;
+}
+
+.icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.icon-box h4 a {
+    color: black;
+}
+
+.icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.icon-box:hover {
+    background: #efefef;
+}
+
+#cercador{
+    background-color: #ffeaa1 ;
+}
+
+/*HEADER*/
+
+#capcalera{
+    background-color: black;
+    min-width: 100%;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #ffeaa1;
+}
+
+
+
+
+/* Footer*/
+
+footer{
+    background-color: black;
+}
