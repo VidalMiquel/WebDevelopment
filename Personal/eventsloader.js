@@ -58,10 +58,14 @@ function introduirLogo() {
     logoPaginaWeb.appendChild(svgLogo);
     logo.appendChild(logoPaginaWeb);
 
-};
+}
 
 
+console.log("lol");
+
+console.log(data.filter(element => element.location == "Binissalem"));
 
 introduirXarxes();
 introduirLogo();
+
 
