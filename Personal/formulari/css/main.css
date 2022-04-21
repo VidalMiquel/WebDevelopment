@@ -183,24 +183,11 @@ html {
 /**
  * A very simple reset that sits on top of Normalize.css.
  */
-body,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, dd, ol, ul,
-figure,
-hr,
-fieldset, legend {
-  margin: 0;
-  padding: 0;
-}
 
 /**
  * Remove trailing margins from nested lists.
  */
-li > ol,
-li > ul {
-  margin-bottom: 0;
-}
+
 
 /**
  * Remove default table spacing.
@@ -233,11 +220,7 @@ button {
   min-height: 100vh;
 }
 
-body {
-  font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
