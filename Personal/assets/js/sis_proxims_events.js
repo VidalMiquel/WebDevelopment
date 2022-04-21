@@ -39,14 +39,12 @@ function visualitzarEvent(data){
     const text = document.createElement("p");
     contenidor.className = "col-lg-4 col-md-6 d-flex align-items-stretch mt-4";
     contenidor2.className = "shadow icon-box";
-    contenidor3.className = "icon";
     link1.innerHTML = data.name;
     text.innerHTML = data.description;
     link2.href = "#";
     link2.className = "btn btn-skin btn--radius-2";
     link2.innerHTML = "Veure esdeveniment";
     titol.appendChild(link1);
-    contenidor2.appendChild(contenidor3);
     contenidor2.appendChild(titol);
     contenidor2.appendChild(text);
     contenidor2.appendChild(link2);

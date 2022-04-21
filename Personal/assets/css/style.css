@@ -730,14 +730,14 @@ a.btn:focus{
 
 #titolSeccio1Calendari{
   padding: 30px;
-  font-family: 'Montserrat';
+  font-size: 30px;
 }
 
 #titolSeccio2Calendari{
   padding: 10px;
-  font-family: 'Montserrat';
   background-color: #efefef;
   padding-bottom: 20px;
+  font-size: 30px;
 }
 .textSeccio1Calendari{
   text-align: center;

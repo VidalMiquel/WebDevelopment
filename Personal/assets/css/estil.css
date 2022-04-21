@@ -34,7 +34,6 @@
 }
 
 
-/*BODY*/
 
 
 
@@ -42,7 +41,7 @@
 /*ESDEVENIMENTS*/
 #titolSeccio1Calendari {
     padding: 30px;
-    font-family: 'Montserrat';
+    
 }
 
 .section-title-formulari {
@@ -59,15 +58,15 @@
 
 #titolSeccio2Calendari {
     padding: 10px;
-    font-family: 'Montserrat';
     background-color: #efefef;
     padding-bottom: 20px;
+    font-size: 30px;
 }
 
 
 .textSeccio2Calendari {
     text-align: center;
-    font-size: 20px;
+    font-size: 20px ;
     background-color: #efefef;
 }
 
@@ -162,6 +161,14 @@ a.btn:focus {
     background-color: #ffeaa1 ;
 }
 
+.textSeccio1Calendari{
+    text-align: center;
+    font-size: 20px ;
+}
+
+#titolSeccio1Calendari{
+    font-size: 30px;
+  }
 /*HEADER*/
 
 #capcalera{

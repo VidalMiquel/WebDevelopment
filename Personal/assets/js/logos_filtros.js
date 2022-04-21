@@ -13,11 +13,10 @@ function logoFira() {
 
 function logoConcert() {
     const logoConcert = document.createElement('img');
-    logoConcert.src = "assets/svg/event.svg"
+    logoConcert.src = "assets/svg/concert.svg"
     logoConcert.class = "image.fluid";
     svgConcert.appendChild(logoConcert);
 }
-/*assets/svg/concert.svg*/
 
 function logoEvents() {
     const logoEvents = document.createElement('img');
@@ -28,11 +27,11 @@ function logoEvents() {
 
 function logoPreferits() {
     const logoPreferits = document.createElement('img');
-    logoPreferits.src = "assets/svg/event.svg"
+    logoPreferits.src = "assets/svg/preferit.svg"
     logoPreferits.class = "image.fluid";
     svgPreferits.appendChild(logoPreferits);
 }
-/*assets/svg/preferit.svg */
+
 function introduirLogosFiltres() {
     logoVerbena();
     logoFira();
