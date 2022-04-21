@@ -1,9 +1,0 @@
-Ordenados por prioridad
-
-1-footer
-2-introducir calendario en la sección "Calendari" entre el párrafo con el lorem ipsum y el titulo 'Formulari'.
-3-posicionar corractamente fotografia de la sección "Qui som" al modificar tamaño de la pestaña del navegador. (Centrar la imagen basta)
-4-colocar correctamente el campo 'Programa' al modificar tamaño de la pestaña del navegador. (Basta con separar el titulo, del campo)
-5-introducir campo dia en el formulario. (seleccionar el dia mediante un calendario. No es prioritario).
-
-MUCHAS GRACIAS POR LA AYUDA ;)!
