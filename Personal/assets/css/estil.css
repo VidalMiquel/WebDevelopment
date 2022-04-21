@@ -173,6 +173,10 @@ a.btn:focus {
     color: white;
 }
 
+.nav-item:hover{
+    color: white;
+}
+
 .nav-link:hover{
     color: #ffeaa1;
 }
