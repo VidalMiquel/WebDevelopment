@@ -1,4 +1,4 @@
-data =
+ data =
   [
       {
         "@type": "fira",
@@ -23,7 +23,7 @@ data =
         "endDate": "2022-07-18",
         "location": "Petra",
         "organizer": "Associació de Joves de Petra 'El dimoni s’hi va retre'.",
-        "descriptioin": "La festa de ses Clovelles es caracteritza per, davant la Casa de la Vila, llançar-se entre els participants fins a una tona de clovelles d'ametlla.",
+        "description": "La festa de ses Clovelles es caracteritza per, davant la Casa de la Vila, llançar-se entre els participants fins a una tona de clovelles d'ametlla.",
         "name": "Festa de ses Clovelles",
         "primaryImageOfPage": null,
         "datos-extra": {

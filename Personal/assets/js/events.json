@@ -1,7 +1,7 @@
 
-{	"event": [
+ [
 		{
-			"@type": "fira",
+			"about": "fira",
 			"startDate": "2022-03-24",
 			"endDate": "2022-03-25",
 			"location": "Binissalem",
@@ -18,7 +18,7 @@
 			}
 		},
 		{
-			"@type": "verbena",
+			"about": "verbena",
 			"startDate": "2022-07-18",
 			"endDate": "2022-07-18",
 			"location": "Petra",
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"@type": "verbena",
+			"about": "verbena",
 			"startDate": "2022-07-06",
 			"endDate": "2022-07-06",
 			"location": "Campanet",
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"@type": "verbena",
+			"about": "verbena",
 			"startDate": "2022-27-08",
 			"endDate": "2022-27-08",
 			"location": "Maria de la Salut" ,
@@ -71,5 +71,5 @@
 			}
 		}
 	]
-}
+
 
