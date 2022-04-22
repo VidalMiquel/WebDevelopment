@@ -1,12 +1,12 @@
 
 
-function cargarDatos(){
-    
+function cargarDatos() {
+
     var xmlhttp = new XMLHttpRequest();
     var url = "assets/js/events.json";
 
-    xmlhttp.onreadystatechange = function(){
-        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             dades = JSON.parse(xmlhttp.responseText);
             dataVisualizar(dades);
         }
@@ -16,20 +16,24 @@ function cargarDatos(){
     xmlhttp.send();
 }
 
-function dataVisualizar(data){
+function dataVisualizar(data) {
     let date = new Date();
     var actualDate = date.toISOString();
-
+    var i = 0;
     for (let index = 0; index < data.length; index++) {
-            if(data[index].startDate > actualDate){
+        if (i < 6) {
+            if (data[index].startDate > actualDate) {
                 visualitzarEvent(data[index]);
-            }else{
-                console.log("Hola");
-            }     
+                i++;
+            }
+        } else {
+            break;
+        }
+
     }
 }
 
-function visualitzarEvent(data){
+function visualitzarEvent(data) {
     const contenidor = document.createElement("div");
     const contenidor2 = document.createElement("div");
     const contenidor3 = document.createElement("div");
@@ -50,7 +54,7 @@ function visualitzarEvent(data){
     contenidor2.appendChild(link2);
     contenidor.appendChild(contenidor2);
     eventsProxims.appendChild(contenidor);
-    
+
 }
 
 cargarDatos();
