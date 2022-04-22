@@ -32,7 +32,7 @@
 				"hashtag": "Clovelles2022"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/clovelles.png"
 		}
 	},
 	{
@@ -50,7 +50,7 @@
 				"hashtag": "CarnavalEstiuCampanet"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/carnavalCampanet.jpg"
 		}
 	},
 	{
@@ -68,7 +68,7 @@
 				"hashtag": "Rock’nRostoll"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/rockRostoll.jpg"
 		}
 	},
 	{
@@ -86,7 +86,7 @@
 				"hashtag": "CanetRockMallorca"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/programaCanet.png"
 		}
 	},
 	{
@@ -104,7 +104,7 @@
 				"hashtag": "MallorcaLifeFestival"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/prgramaMLF.jpg"
 		}
 	},
 	{
@@ -122,7 +122,7 @@
 				"hashtag": "RBFMallorca"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/RBFMAllorca.png"
 		}
 	},
 	{
@@ -140,7 +140,7 @@
 				"hashtag": "FiroSoller"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/firoSoller.png"
 		}
 	},
 	{
@@ -158,7 +158,7 @@
 				"hashtag": "CanamuntCanavall"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/programaCanamuntVsCanavall.jpg"
 		}
 	},
 	{
@@ -194,7 +194,7 @@
 				"hashtag": "FiraCaragolSantJordi"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/firaCaragol.jpeg"
 		}
 	},
 	{
@@ -212,7 +212,7 @@
 				"hashtag": "NitArtPalma"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/nitArt.png"
 		}
 	},
 	{
@@ -230,7 +230,7 @@
 				"hashtag": "FiraPedraBinissalem"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/firaPedra.png"
 		}
 	},
 	{
@@ -248,7 +248,7 @@
 				"hashtag": "MWTPalma"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/rosalia.jpg"
 		}
 	},
 	{
@@ -266,26 +266,43 @@
 				"hashtag": "EstopaPalma"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/estopa.jpg"
 		}
 	},
 	{
-		"identifier": "15",
+		"identifier": "16",
 		"about": "concert",
 		"startDate": "2022-21-07",
 		"endDate": "2022-21-07",
 		"location": "Lloret de Vistalegre",
 		"organizer": "Moviment Musical Mobofest",
-		"description": "",
+		"description": "El Mobofest és el festival internacional de música independent de Mallorca. L'objectiu prinical del festival és promoure cultura al 'Pla de Mallorca' pel simple gust i amor cap a la música i tot el que envolta. ",
 		"name": "Mobofest",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
-				"hashtag": "EstopaPalma"
+				"hashtag": "Mobofest"
 			},
 			"gallery": null,
-			"program": null
+			"program": "assets/img/programes/mobo.jpeg"
+		}
+	},
+	{
+		"identifier": "17",
+		"about": "verbena",
+		"startDate": "2022-13-08",
+		"endDate": "2022-14-08",
+		"location": "Sineu",
+		"organizer": "Muchal Foundation",
+		"description": "les ganes de festa d'un grup de joves sineues han fet que amb el temps, el Much es converteixi amb una de les vebrenes més esperades pel joves mallorquins. Caracteritzat pel color de rosa, el Much i sa Muca es troben a la plaça per donar inici a la festa. ",
+		"name": "Much de Reig",
+		"primaryImageOfPage": null,
+		"datos-extra": {
+			"socialnetworks": {
+				"hashtag": "Much"
+			},
+			"gallery": null,
+			"program": "assets/img/programes/much.jpg"
 		}
 	}
-
 ]
