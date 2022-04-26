@@ -19,15 +19,13 @@ var type = getUrlParameter('eventType');
 console.log(type);
 
 
-function cargarDatos(obj){
+function cargarDatos() {
     var xmlhttp = new XMLHttpRequest();
     var url = "assets/js/events.json";
-    console.log(obj);
-    console.log(obj.name);
-    xmlhttp.onreadystatechange = function(){
-        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             dades = JSON.parse(xmlhttp.responseText);
-            dataVisualizar(dades, obj.name);
+            dataVisualizar(dades);
         }
     };
 
@@ -35,18 +33,26 @@ function cargarDatos(obj){
     xmlhttp.send();
 }
 
-function dataVisualizar(data, name){
-    let date = new Date();
-    var actualDate = date.toISOString();
+function dataVisualizar(data) {
+    const tit = document.createElement("h1");
+    tit.innerHTML = type;
+    titolSeccio.appendChild(tit);
 
-    for (let index = 0; index < data.length; index++) {
-            if(name == "fira"){
-                visualitzarEvent(data[index]);
-            }
+    if(type == "tots"){
+        for (let index = 0; index < data.length; index++) {
+            visualitzarEvent(data[index]);
+        }
+    }else{
+        var data_filter = data.filter(element => element.about == type)
+        console.log(data_filter);
+        for (let index = 0; index < data_filter.length; index++) {
+            visualitzarEvent(data_filter[index]);
+        }
     }
+
 }
 
-function visualitzarEvent(data){
+function visualitzarEvent(data) {
     const contenidor = document.createElement("div");
     const contenidor2 = document.createElement("div");
     const contenidor3 = document.createElement("div");
@@ -55,7 +61,6 @@ function visualitzarEvent(data){
     const link1 = document.createElement("a");
     const link2 = document.createElement("a");
     const text = document.createElement("p");
-    const tit = document.createElement("h1");
     contenidor.className = "col-lg-4 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
@@ -74,10 +79,10 @@ function visualitzarEvent(data){
     contenidor2.appendChild(text);
     contenidor2.appendChild(link2);
     contenidor.appendChild(contenidor2);
-    tit.innerHTML = "Fires";
-    titolSeccio.appendChild(tit);
+
     eventsProximsPerTipus.appendChild(contenidor);
-    
+
 }
 
 
+cargarDatos();
