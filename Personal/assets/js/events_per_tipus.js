@@ -67,18 +67,18 @@ function visualitzarEvent(data) {
     const link1 = document.createElement("a");
     const link2 = document.createElement("a");
     const text = document.createElement("p");
+    const dia = document.createElement("p");
+    dia.innerHTML = data.startDate;
     contenidor.className = "col-lg-4 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
     logo = document.createElement('img');
-    if(type == "fira"){
+    if(data.about == "fira"){
         logo.src = "assets/svg/fira.svg"
-    }else if (type == "verbena") {
+    }else if (data.about == "verbena") {
         logo.src = "assets/svg/verbena.svg";
-    }else if(type == "concert"){
+    }else if(data.about == "concert"){
         logo.src = "assets/svg/concert.svg"
-    }else{
-        logo.src = "assets/svg/prferit.svg"
     }
     
     logo.class = "image.fluid";
@@ -91,12 +91,12 @@ function visualitzarEvent(data) {
     titol.appendChild(link1);
     contenidor2.appendChild(contenidor3);
     contenidor2.appendChild(titol);
+    contenidor2.appendChild(dia);
     contenidor2.appendChild(text);
     contenidor2.appendChild(link2);
     contenidor.appendChild(contenidor2);
     eventsProximsPerTipus.appendChild(contenidor);
 
 }
-
 
 cargarDatos();
