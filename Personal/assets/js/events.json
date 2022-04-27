@@ -8,12 +8,14 @@
 		"organizer": "Ajuntament de Binissalem",
 		"description": "Les Festes del Vermar o Sa Vermada, és la festa més popular del poble de Binissalem. Tots els pagesos o vermadors van a les vinyes a vermar i a trepitjar raïm.",
 		"name": "Les Festes del Vermar o Sa Vermada",
+		"latitude": "39.68811118364798",
+    	"longitude": "2.8439227157750815",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "FiraVermar"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/vermar1.jpg","assets/img/esdeveniments/vermar2.jpg","assets/img/esdeveniments/vermar3.jpg"],
 			"program": null
 		}
 	},
@@ -26,12 +28,14 @@
 		"organizer": "Associació de Joves de Petra 'El dimoni s’hi va retre'.",
 		"description": "La festa de ses Clovelles es caracteritza per, davant la Casa de la Vila, llançar-se entre els participants fins a una tona de clovelles d'ametlla.",
 		"name": "Festa de ses Clovelles",
+		"latitude": "39.614142205585935",
+    	"longitude": "3.112398979902638",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "Clovelles2022"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/sesclovelles1.jpg","assets/img/esdeveniments/sesclovelles2.jpg","assets/img/esdeveniments/sesclovelles3.jpg"],
 			"program": "assets/img/programes/clovelles.png"
 		}
 	},
@@ -44,12 +48,14 @@
 		"organizer": "Associació de Joves 'Sa LLengua Bona'",
 		"description": "El Carnaval d’estiu de Campanet està protagonitzada per l’amo i sa Madona , escollits entre els campanaters i campanateres. A més, els presents van disfrassats de diferentes temàtiques com mana la tradició.",
 		"name": "Carnaval d’estiu de Campanet",
+		"latitude": "39.776446663805416", 
+    	"longitude": "2.962617237386124",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "CarnavalEstiuCampanet"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/carnavalCampanet1.jpg"],
 			"program": "assets/img/programes/carnavalCampanet.jpg"
 		}
 	},
@@ -62,12 +68,14 @@
 		"organizer": null,
 		"description": "El Rock’n Rostoll és un festival que amb els anys ha anat augmentant la seva popularitat. Actualement, conta amb dos espais de música ben diferenciats. En primer lloc, l’escenari de rock. I en segon lloc, el safareig, imatge representativa del festival mariando.",
 		"name": "Rock’n Rostoll",
+		"latitude": "39.66543724374644", 
+    	"longitude": "3.073209310615613",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "Rock’nRostoll"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/rockRostoll1.jpg", "assets/img/esdeveniments/rockRostoll2.jpg", "assets/img/esdeveniments/rockRostoll3.jpg"],
 			"program": "assets/img/programes/rockRostoll.jpg"
 		}
 	},
@@ -80,12 +88,14 @@
 		"organizer": "Sunmusic i Managelment",
 		"description": "Després de la consolidació a Catalunya, arriba a Mallorca la primera edició del Canet Rock. Trobam en el cartell les bandes més populars de la música catalana, les qual oferiran més de 12 hores de festa i bon ambient",
 		"name": "Canet Rock Mallorca",
+		"latitude": "39.85450091332182", 
+    	"longitude": " 3.1250532653306617",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "CanetRockMallorca"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/canetRock1.jpg","assets/img/esdeveniments/canetRock2.jpg", "assets/img/esdeveniments/canetRock3.jpg"],
 			"program": "assets/img/programes/programaCanet.png"
 		}
 	},
@@ -94,16 +104,18 @@
 		"about": "concert",
 		"startDate": "2022-06-24",
 		"endDate": "2022-06-24",
-		"location": "Calvià",
+		"location": "Antic Aquapark Calvià",
 		"organizer": "Estrella Damm, Ajuntament de Clavià i GOIB",
 		"description": "El festival internacional de música més important de les Illes Balears torna al 2022 amb el seu format original. Amb artistes com Cristina Aguilera, C Tangana i Muse, esperen dies de festa i ball",
 		"name": "Mallorca Life Festival",
+		"latitude": "39.50618155448475",  
+    	"longitude": "2.5205295668163745",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "MallorcaLifeFestival"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/MLF1.jpg","assets/img/esdeveniments/MLF2.jpg", "assets/img/esdeveniments/MLF3.jpg"],
 			"program": "assets/img/programes/prgramaMLF.jpg"
 		}
 	},
@@ -116,12 +128,14 @@
 		"organizer": "DQuality group i Ajuntament d’Inca",
 		"description": "L’Urban Beach Festival més gran d’Europa  celebra la seva segona edició a Mallorca reunint als artistes més importants del món del Reggaeton",
 		"name": "Reggaeton Beach Festival",
+		"latitude": "39.72769743804724", 
+    	"longitude": "2.92302550036524",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "RBFMallorca"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/RBF1.jpg","assets/img/esdeveniments/RBF2.jpg", "assets/img/esdeveniments/RBF3.jpg"],
 			"program": "assets/img/programes/RBFMAllorca.png"
 		}
 	},
@@ -134,12 +148,14 @@
 		"organizer": "Ajuntament de Sóller",
 		"description": "Es Firó de Sóller commemora el desembarc de corsaris turcs i argelins al port de Soller l’11 de maig de l’any 1561 amb victòria sollerica. Els veins del poble recorden la batalla recreant-la als diversos punts del poble, on segles enrere es va desenvolupar",
 		"name": "Es Firó de Sóller",
+		"latitude": "39.76777413327155", 
+    	"longitude": "2.716680678165692",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "FiroSoller"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/firo1.jpg","assets/img/esdeveniments/firo2.jpg", "assets/img/esdeveniments/firo3.jpg"],
 			"program": "assets/img/programes/firoSoller.png"
 		}
 	},
@@ -148,16 +164,18 @@
 		"about": "verbena",
 		"startDate": "2022-09-01",
 		"endDate": "2022-09-01",
-		"location": "Palma",
+		"location": "Parc de la Mar, Palma",
 		"organizer": "Ajuntament de Palma i Orgull Llonguet",
 		"description": "Amb l’objectiu de difondre l’esperit llongeut, es celebra la setena edició de Canamunt vs Canavall. Amb l’objectiu de recordar el conflicte entre els nobiliaris mallorquins segles enrere, els participants, diferenciats per una camiseta vermella o groga, segons el bàndol, lluiten a una guerra d’aigua",
 		"name": "Canamunt vs Canavall",
+		"latitude": "39.56561514765012", 
+    	"longitude": "2.650134430963643",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "CanamuntCanavall"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/canamuntCanavall1.jpg","assets/img/esdeveniments/canamuntCanavall2.jpg", "assets/img/esdeveniments/canamuntCanavall3.jpg"],
 			"program": "assets/img/programes/programaCanamuntVsCanavall.jpg"
 		}
 	},
@@ -170,12 +188,14 @@
 		"organizer": "Associació Son Ferriol Indústria i Comerç",
 		"description": "La Fira de Son Ferriol, amb més de 27 edicions realitzades, es caracteritza per la promoció de la vida empresarial de la barriada palmesana, a més d’oferir propostes alimentàries, espectacles i atraccions pels més petits",
 		"name": "Fira Agrícola, Ramadera i Comercial",
+		"latitude": "39.57535174774021", 
+    	"longitude": " 2.715047261342723",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
 				"hashtag": "FiraSonFerriol"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/firaSF1.jpg","assets/img/esdeveniments/firaSF2.jpg", "assets/img/esdeveniments/firaSF3.jpg"],
 			"program": null
 		}
 	},
@@ -188,6 +208,8 @@
 		"organizer": "Associació de Veïns de Sant Jordi",
 		"description": "La Fira del Caragol es caracteritza per l'homenatge al mol·lusc amb l'elaboració de més de 2000 kg per a la seva consumició. A més, pels més petits, destaca les carreres de cargols. A tot això, es suma una petita fira d’artesans, comerciants i indústries",
 		"name": "Fira del Caragol",
+		"latitude": " 39.55578198581195",
+    	"longitude": "2.7786001798663964",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -206,6 +228,8 @@
 		"organizer": "Art Palma Contemporani",
 		"description": "La Nit de l'Art té com a objectiu l'exposar, de manera gratuïta, les exposisions de les galerias d'art de Palma. Caracteritzats pels recorregus per les diferents galeries, a la Nit de l'Art es crea un ambient màgic pel carres de ciutat.",
 		"name": "Nit de l'art",
+		"latitude": "39.57524015646539", 
+    	"longitude": "2.651572161666805",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -224,6 +248,8 @@
 		"organizer": "Ajuntament de Binissalem i Agrupació de Fires i Festes de Binissalem",
 		"description": "Per commemorar la tradició amb l'ús de la pedra, des de ja fa més d'una dècada, a Binissalem es realitza 'La Fira de la Pedra'. El diferents artesans exposen les seves obres d'art a peu de carrer, on podreu trobar altres entorns",
 		"name": "Fira de la Pedra",
+		"latitude": "39.68811118364798",
+    	"longitude": "2.8439227157750815",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -238,10 +264,12 @@
 		"about": "concert",
 		"startDate": "2022-08-01",
 		"endDate": "2022-08-01",
-		"location": "Palma",
+		"location": "Son Fusteret",
 		"organizer": "Trui Son Fusteret",
 		"description": "Després de l'èxit amb el llançament de l'àlbum 'Motomami'. Rosalia arriba per primer pic a Mallorca amb l'objecti de fer vibrar, cantar i ballar a tots els assistensts. La catalana, coneguda mundialment, és un fenòmen imparable, que es va donar a conèixer amb l'àlbum 'El mal querer'",
 		"name": "Motomami World Tour 2022",
+		"latitude": " 39.59161548816884", 
+    	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -256,10 +284,12 @@
 		"about": "concert",
 		"startDate": "2022-07-21",
 		"endDate": "2022-07-21",
-		"location": "Palma",
+		"location": "Son Fusteret",
 		"organizer": "Trui Son Fusteret",
 		"description": "La coneguda banda Estopa torna a realitzar una gira de concerts presentant el seu nou disc 'FUEGO'. Els germans Muñoz celebren els més de 20 anys de carrera exitosa presentant noves melodies i recordant els seus grans èxits",
 		"name": "Estopa - Gira Fuego",
+		"latitude": " 39.59161548816884",   
+    	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -278,6 +308,8 @@
 		"organizer": "Moviment Musical Mobofest",
 		"description": "El Mobofest és el festival internacional de música independent de Mallorca. L'objectiu prinical del festival és promoure cultura al 'Pla de Mallorca' pel simple gust i amor cap a la música i tot el que envolta. ",
 		"name": "Mobofest",
+		"latitude": "39.61799455956194",  
+    	"longitude": "2.9738029562237323",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {
@@ -296,6 +328,8 @@
 		"organizer": "Muchal Foundation",
 		"description": "les ganes de festa d'un grup de joves sineues han fet que amb el temps, el Much es converteixi amb una de les vebrenes més esperades pel joves mallorquins. Caracteritzat pel color de rosa, el Much i sa Muca es troben a la plaça per donar inici a la festa. ",
 		"name": "Much de Reig",
+		"latitude": "39.64455126833488",  
+    	"longitude": "3.0110683071478825",
 		"primaryImageOfPage": null,
 		"datos-extra": {
 			"socialnetworks": {

@@ -1,4 +1,10 @@
-
+/*
+NOM DEL FITXER: sis_pròxims_events.js
+FUNCIONALITAT: viualitzar per pantalla els pròxims sis events a partir del dia d'avui. És a dir, 
+            ordenam el fitxer json pel dia de l'event i a continuació obtenim el dia d'avui. 
+            Realitzant una comparació, pintam els sis pròxims events. 
+ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
+*/
 
 function cargarDatos() {
 

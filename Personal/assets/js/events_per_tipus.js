@@ -1,4 +1,10 @@
-
+/*
+NOM DEL FITXER: events_per_tipus.js
+FUNCIONALITAT: segons el tipus d'event a voler a visualitzar, es filtre el fitxer json i 
+            es visualitza per pantalla. Per això, obtenir el tipus d'event, segons aquest
+            tipus, es filtre el json, i finalment, visualitzam els events determinats.
+ON TROBAM AQUESTA FUNCINALITAT:events_per_tipus.html
+*/
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),

@@ -1,4 +1,8 @@
-
+/*
+NOM DEL FITXER: generalitats.js
+FUNCIONALITAT: visualitzar el contingut dinàmic del header (icone de la pw) i del footer (icones de les xarxes socials)
+ON TROBAM AQUESTA FUNCINALITAT: index.html. quiSom.html, esdeveniments.html, cercador.html, events_per_tipus.html i events.html
+*/
 
 
 
