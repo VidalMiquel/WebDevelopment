@@ -25,13 +25,6 @@ function logoConcert() {
     svgConcert.appendChild(logoConcert);
 }
 
-function logoEvents() {
-    const logoEvents = document.createElement('img');
-    logoEvents.src = "assets/svg/event.svg"
-    logoEvents.class = "image.fluid";
-    svgEvents.appendChild(logoEvents);
-}
-
 function logoPreferits() {
     const logoPreferits = document.createElement('img');
     logoPreferits.src = "assets/svg/preferit.svg"
@@ -43,7 +36,6 @@ function introduirLogosFiltres() {
     logoVerbena();
     logoFira();
     logoConcert();
-    logoEvents();
     logoPreferits();
 }
 
