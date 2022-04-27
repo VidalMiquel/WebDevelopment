@@ -1,3 +1,10 @@
+/*
+NOM DEL FITXER: logos:filtros.js
+FUNCIONALITAT: visualitzar els icones referents als filetres a poder aplicar al cercador.
+ON TROBAM AQUESTA FUNCINALITAT: cercador.html
+*/
+
+
 function logoVerbena() {
     const logoVerbena = document.createElement('img');
     logoVerbena.src = "assets/svg/verbena.svg"
