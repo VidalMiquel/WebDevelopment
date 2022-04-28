@@ -11,7 +11,7 @@
 		"latitude": "39.68811118364798",
     	"longitude": "2.8439227157750815",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiraVermar"
 			},
@@ -31,7 +31,7 @@
 		"latitude": "39.614142205585935",
     	"longitude": "3.112398979902638",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Clovelles2022"
 			},
@@ -51,7 +51,7 @@
 		"latitude": "39.776446663805416", 
     	"longitude": "2.962617237386124",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "CarnavalEstiuCampanet"
 			},
@@ -71,7 +71,7 @@
 		"latitude": "39.66543724374644", 
     	"longitude": "3.073209310615613",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Rock’nRostoll"
 			},
@@ -91,7 +91,7 @@
 		"latitude": "39.85450091332182", 
     	"longitude": " 3.1250532653306617",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "CanetRockMallorca"
 			},
@@ -111,12 +111,12 @@
 		"latitude": "39.50618155448475",  
     	"longitude": "2.5205295668163745",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "MallorcaLifeFestival"
 			},
 			"gallery": ["assets/img/esdeveniments/MLF1.jpg","assets/img/esdeveniments/MLF2.jpg", "assets/img/esdeveniments/MLF3.jpg"],
-			"program": "assets/img/programes/prgramaMLF.jpg"
+			"program": "assets/img/programes/programaMLF.jpg"
 		}
 	},
 	{
@@ -131,7 +131,7 @@
 		"latitude": "39.72769743804724", 
     	"longitude": "2.92302550036524",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "RBFMallorca"
 			},
@@ -151,7 +151,7 @@
 		"latitude": "39.76777413327155", 
     	"longitude": "2.716680678165692",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiroSoller"
 			},
@@ -171,7 +171,7 @@
 		"latitude": "39.56561514765012", 
     	"longitude": "2.650134430963643",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "CanamuntCanavall"
 			},
@@ -191,7 +191,7 @@
 		"latitude": "39.57535174774021", 
     	"longitude": " 2.715047261342723",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiraSonFerriol"
 			},
@@ -211,7 +211,7 @@
 		"latitude": " 39.55578198581195",
     	"longitude": "2.7786001798663964",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiraCaragolSantJordi"
 			},
@@ -231,7 +231,7 @@
 		"latitude": "39.57524015646539", 
     	"longitude": "2.651572161666805",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "NitArtPalma"
 			},
@@ -251,7 +251,7 @@
 		"latitude": "39.68811118364798",
     	"longitude": "2.8439227157750815",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiraPedraBinissalem"
 			},
@@ -271,7 +271,7 @@
 		"latitude": " 39.59161548816884", 
     	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "MWTPalma"
 			},
@@ -291,7 +291,7 @@
 		"latitude": " 39.59161548816884",   
     	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "EstopaPalma"
 			},
@@ -311,7 +311,7 @@
 		"latitude": "39.61799455956194",  
     	"longitude": "2.9738029562237323",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Mobofest"
 			},
@@ -331,7 +331,7 @@
 		"latitude": "39.64455126833488",  
     	"longitude": "3.0110683071478825",
 		"primaryImageOfPage": null,
-		"datos-extra": {
+		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Much"
 			},
