@@ -90,7 +90,7 @@ function visualitzarEvent(data) {
     contenidor3.appendChild(logo);
     link1.innerHTML = data.name;
     text.innerHTML = data.description;
-    link2.href = "#";
+    link2.href="event.html?eventType=" + data.identifier ;
     link2.className = "btn btn-skin btn--radius-2";
     link2.innerHTML = "Veure esdeveniment";
     titol.appendChild(link1);
