@@ -88,8 +88,8 @@
 		"organizer": "Sunmusic i Managelment",
 		"description": "Després de la consolidació a Catalunya, arriba a Mallorca la primera edició del Canet Rock. Trobam en el cartell les bandes més populars de la música catalana, les qual oferiran més de 12 hores de festa i bon ambient",
 		"name": "Canet Rock Mallorca",
-		"latitude": "39.85450091332182", 
-    	"longitude": " 3.1250532653306617",
+		"latitude": "39.85308426302851", 
+    	"longitude": "3.123873096656471",
 		"primaryImageOfPage": null,
 		"datosextra": {
 			"socialnetworks": {
@@ -188,8 +188,8 @@
 		"organizer": "Associació Son Ferriol Indústria i Comerç",
 		"description": "La Fira de Son Ferriol, amb més de 27 edicions realitzades, es caracteritza per la promoció de la vida empresarial de la barriada palmesana, a més d’oferir propostes alimentàries, espectacles i atraccions pels més petits",
 		"name": "Fira Agrícola, Ramadera i Comercial",
-		"latitude": "39.57535174774021", 
-    	"longitude": " 2.715047261342723",
+		"latitude": "39.57561637607828", 
+    	"longitude": "2.7156480761178097",
 		"primaryImageOfPage": null,
 		"datosextra": {
 			"socialnetworks": {
@@ -208,7 +208,7 @@
 		"organizer": "Associació de Veïns de Sant Jordi",
 		"description": "La Fira del Caragol es caracteritza per l'homenatge al mol·lusc amb l'elaboració de més de 2000 kg per a la seva consumició. A més, pels més petits, destaca les carreres de cargols. A tot això, es suma una petita fira d’artesans, comerciants i indústries",
 		"name": "Fira del Caragol",
-		"latitude": " 39.55578198581195",
+		"latitude": "39.55578198581195",
     	"longitude": "2.7786001798663964",
 		"primaryImageOfPage": null,
 		"datosextra": {
@@ -268,7 +268,7 @@
 		"organizer": "Trui Son Fusteret",
 		"description": "Després de l'èxit amb el llançament de l'àlbum 'Motomami'. Rosalia arriba per primer pic a Mallorca amb l'objecti de fer vibrar, cantar i ballar a tots els assistensts. La catalana, coneguda mundialment, és un fenòmen imparable, que es va donar a conèixer amb l'àlbum 'El mal querer'",
 		"name": "Motomami World Tour 2022",
-		"latitude": " 39.59161548816884", 
+		"latitude": "39.59161548816884", 
     	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
 		"datosextra": {
@@ -288,7 +288,7 @@
 		"organizer": "Trui Son Fusteret",
 		"description": "La coneguda banda Estopa torna a realitzar una gira de concerts presentant el seu nou disc 'FUEGO'. Els germans Muñoz celebren els més de 20 anys de carrera exitosa presentant noves melodies i recordant els seus grans èxits",
 		"name": "Estopa - Gira Fuego",
-		"latitude": " 39.59161548816884",   
+		"latitude": "39.59161548816884",   
     	"longitude": "2.6698027528690074",
 		"primaryImageOfPage": null,
 		"datosextra": {
