@@ -11,7 +11,7 @@ function carregarHome(){
     video.muted = true;
     video.loop = true;
     video.muted  = true;
-    video.id = "videoIndex";
+    video.id = "videoHome";
     video.play();
 
     videoHome.appendChild(video);
