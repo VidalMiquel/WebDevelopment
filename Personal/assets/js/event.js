@@ -34,7 +34,6 @@ function cargarDatos() {
             dataVisualizar(dades);
         }
     };
-
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
@@ -45,23 +44,19 @@ function dataVisualizar(data) {
     var data_filter = data.filter(element => element.identifier == type)
     for (let index = 0; index < data_filter.length; index++) {
         visualitzarEvent(data_filter[index]);
-        
+
     }
-    
-
-
-
-
 }
 
 function visualitzarEvent(info) {
 
     crearTitol(info.name, info.location, info.organizer);
     crearBotoPrograma(info.datosextra.program);
-    APItiempo(info.latitude,info.longitude);
+    APItiempo(info.latitude, info.longitude);
+    introduirMapa(info.latitude, info.longitude);
 }
 
-function crearTitol(nom, lloc, organitzador){
+function crearTitol(nom, lloc, organitzador) {
     console.log(nom);
     console.log(lloc);
     console.log(organitzador);
@@ -69,9 +64,9 @@ function crearTitol(nom, lloc, organitzador){
     const geo = document.createElement("h2");
     const org = document.createElement("h3");
     titol.innerHTML = nom;
-    titol.id ="titolEsdeveniments";
+    titol.id = "titolEsdeveniments";
     geo.innerHTML = lloc;
-    geo.id ="llocEvent";
+    geo.id = "llocEvent";
     org.innerHTML = organitzador;
     org.id = "organitzadorEvent";
     titolEvent.appendChild(titol);
@@ -80,15 +75,15 @@ function crearTitol(nom, lloc, organitzador){
 
 }
 
-function crearBotoPrograma(programa){
+function crearBotoPrograma(programa) {
     const linkDescarrega = document.createElement("a");
-    linkDescarrega.href= programa;
+    linkDescarrega.href = programa;
     linkDescarrega.download = programa;
     linkDescarrega.className = "btn btn-skin btn--radius-2";
     linkDescarrega.innerHTML = "Descarrega programa";
     botoPrograma.appendChild(linkDescarrega);
     const linkVisualitza = document.createElement("a");
-    linkVisualitza.href= programa;
+    linkVisualitza.href = programa;
     linkVisualitza.target = "_blank";
     linkVisualitza.className = "btn btn-skin btn--radius-2";
     linkVisualitza.innerHTML = "Veure programa";
@@ -98,12 +93,12 @@ function crearBotoPrograma(programa){
 
 
 
-function APItiempo(lat,lon) {
+function APItiempo(lat, lon) {
 
 
     var apiid = "17eaa46a6e0645c810da44bce335de2a";
     var xmlhttp = new XMLHttpRequest();
-    var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&APPID='+apiid;
+    var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&APPID=' + apiid;
 
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -117,11 +112,11 @@ function APItiempo(lat,lon) {
     xmlhttp.send();
 }
 
-function montarInfoTiempo(dades){
+function montarInfoTiempo(dades) {
 
-    var tmp_actual =  Math.round(dades.main.temp - 273.15);
-    var tmp_min = Math.round(dades.main.temp_min - 273.15) ;
-    var tmp_max = Math.round(dades.main.temp_max - 273.15) ;
+    var tmp_actual = Math.round(dades.main.temp - 273.15);
+    var tmp_min = Math.round(dades.main.temp_min - 273.15);
+    var tmp_max = Math.round(dades.main.temp_max - 273.15);
     var description = dades.weather[0].main;
     var url = "http://openweathermap.org/img/wn/" + dades.weather[0].icon + "@2x.png";
 
@@ -151,11 +146,25 @@ function montarInfoTiempo(dades){
     contenidor.appendChild(temperaturaMinTitol);
     contenidor.appendChild(temperaturaDiaMin);
     tiempo.appendChild(contenidor);
-    
 
-    
+
+
 }
 
+function introduirMapa(lat, long) {
+
+    var map = L.map('map').setView([lat, long], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoidmlkYWxlZXQiLCJhIjoiY2wybm54amo2MjIxbTNpcDltZnl5bXNwMyJ9.UIILxO61B7Jn2dICDsyUtA'
+    }).addTo(map);
+
+}
 
 
 cargarDatos();
