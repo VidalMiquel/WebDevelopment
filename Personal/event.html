@@ -23,7 +23,12 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
 
 
   <link href="assets/css/estil.css" rel="stylesheet">
@@ -69,22 +74,19 @@
         </div>
       </div>
 
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-          <button class="btn btn-primary btn-lg" type="button">Example button</button>
-        </div>
-      </div>
-
       <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 text-center p-5 text-white  rounded-3" id="tiempo" style="background-image: url(fondoprova.jpg);">
+        <div class="col-md-4">
+          <div class=" text-center p-5 text-white  rounded-3" id="tiempo" style="background-image: url(fondoprova.jpg);">
             
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3">
+        <div class="col-md-4">
+          <div class="h-100 p-5  border rounded-3" id="map">
+           
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 p-5  border rounded-3" id="map">
            
           </div>
         </div>
