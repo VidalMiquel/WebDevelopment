@@ -207,5 +207,13 @@ footer{
 }
 
 #map{
-    min-height: 400px;
+    max-height: 320px;
+    z-index: 1;
 }
+
+#mapa {
+    height: 450px;
+}
+
+
+
