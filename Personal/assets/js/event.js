@@ -51,9 +51,11 @@ function dataVisualizar(data) {
 function visualitzarEvent(info) {
 
     crearTitol(info.name, info.location, info.organizer);
-    crearBotoPrograma(info.datosextra.program);
     APItiempo(info.latitude, info.longitude);
     introduirMapa(info.latitude, info.longitude);
+    introduirFotografiaPrincipal(info.datosextra.gallery[0]);
+    introduirInformacioEvent(info);
+    crearBotoPrograma(info.datosextra.program);
 }
 
 function crearTitol(nom, lloc, organitzador) {
@@ -173,7 +175,42 @@ function introduirMapa(lat, long) {
 
 }
 
+function introduirFotografiaPrincipal(fotografia){
+    const imatge = document.createElement("img");
+    imatge.className = "img-fluid";
+    imatge.src = fotografia;
+    imatgeEvent.appendChild(imatge);
+}
 
+function introduirInformacioEvent(event){
 
+    //Descripcio de l'event
+    const descripcio = document.createElement("p");
+    descripcio.innerHTML = event.description;
+    descripcio.className = "p-3";
+    //Lloc de l'event
+    const lloc = document.createElement("h1");
+    lloc.innerHTML = event.location;
+    //Organitzador de l'event
+    const organitzador = document.createElement("h3");
+    organitzador.innerHTML = event.organizer;
+    organitzador.className = "p-3";
+    //Dia de l'event
+    const dia = document.createElement("h5");
+    if(event.startDate == event.endDate){
+        dia.innerHTML = event.startDate;
+        
+    }else{
+        dia.innerHTML = "Del " + event.startDate + " fins al " + event.endDate;
+      
+    }
+    textHome.appendChild(lloc);
+    textHome.appendChild(organitzador);
+    textHome.appendChild(dia);
+    textHome.appendChild(descripcio);
+   
+
+    
+}
 
 cargarDatos();
