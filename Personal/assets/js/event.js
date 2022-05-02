@@ -153,7 +153,7 @@ function montarInfoTiempo(dades) {
 
 function introduirMapa(lat, long) {
 
-    var map = L.map('map').setView([lat, long], 13);
+    var map = L.map('map').setView([lat, long], 14);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -164,7 +164,16 @@ function introduirMapa(lat, long) {
         accessToken: 'pk.eyJ1IjoidmlkYWxlZXQiLCJhIjoiY2wybm54amo2MjIxbTNpcDltZnl5bXNwMyJ9.UIILxO61B7Jn2dICDsyUtA'
     }).addTo(map);
 
+    var marker = L.marker([lat,long]).addTo(map);
+
+    var home = document.getElementById("botoCentrar");
+    home.addEventListener("click", function(){
+        map.setView([lat,long], 14);
+    });
+
 }
+
+
 
 
 cargarDatos();
