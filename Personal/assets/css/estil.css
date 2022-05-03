@@ -180,6 +180,14 @@ a.btn:focus {
     font-size: 30px;
 }
 
+#map2{
+    height: 500px;
+    width: 100%;
+}
+
+#contentmapa{
+    max-width: 50%;
+}
 /*HEADER*/
 
 #capcalera {
