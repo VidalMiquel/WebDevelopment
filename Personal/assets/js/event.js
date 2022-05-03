@@ -118,12 +118,12 @@ function montarInfoTiempo(dades) {
     iconeTemperatura.src = url;
     iconeTemperatura.className = "img-fluid";
     temperaturaActualTitol.innerHTML = "Temperatura actual";
-    temperaturaActual.innerHTML = tmp_actual + "C";
+    temperaturaActual.innerHTML = tmp_actual + "ºC";
     temperaturaActual.style.margin = "0";
     temperaturaMaxTitol.innerHTML = "Temperatura màxima";
-    temperaturaDiaMax.innerHTML = tmp_max + "C";
+    temperaturaDiaMax.innerHTML = tmp_max + "ºC";
     temperaturaMinTitol.innerHTML = "Temperatura mínima";
-    temperaturaDiaMin.innerHTML = tmp_min + "C";
+    temperaturaDiaMin.innerHTML = tmp_min + "ºC";
     tiempo.appendChild(temperaturaActualTitol);
     tiempo.appendChild(temperaturaActual);
     tiempo.appendChild(iconeTemperatura);

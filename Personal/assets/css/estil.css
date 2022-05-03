@@ -180,14 +180,15 @@ a.btn:focus {
     font-size: 30px;
 }
 
-#map2{
+#map2 {
     height: 500px;
     width: 100%;
 }
 
-#contentmapa{
+#contentmapa {
     max-width: 50%;
 }
+
 /*HEADER*/
 
 #capcalera {
@@ -209,15 +210,15 @@ a.btn:focus {
 
 /*event individual */
 
-#idEvent{
+#idEvent {
     padding-top: 30px;
 }
 
-#organitzadorEvent{
+#organitzadorEvent {
     padding: 20px;
 }
 
-#diaEvent{
+#diaEvent {
     padding: 0px;
     margin: 0px;
 }
@@ -269,10 +270,30 @@ footer {
 @media (min-width:200px) and (max-width: 884.5px) {
 
 
-    #idEvent{
+    #idEvent {
         padding-top: 10px;
     }
-    #organitzadorEvent{
+
+    #organitzadorEvent {
         padding: 10px;
     }
 }
+
+#llegenda {
+    list-style-type: none;
+}
+
+
+
+#elementllegenda1 {
+    float: left;
+}
+
+#elementllegenda2 {
+    float: left;
+}
+
+#elementllegenda3 {
+    float: left;
+}
+
