@@ -1,4 +1,4 @@
-body{
+body {
     height: 100%;
 }
 
@@ -25,6 +25,7 @@ body{
 
 /*SECCIÓ QUI SOM */
 #titolSeccio2About {
+    padding-top: 50px;
     padding: 30px;
     font-family: 'Montserrat';
     text-align: center;
@@ -37,6 +38,12 @@ body{
 }
 
 
+#fotoQuiSsom {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
 
 
 
@@ -44,7 +51,7 @@ body{
 /*ESDEVENIMENTS*/
 #titolSeccio1Calendari {
     padding: 30px;
-    
+
 }
 
 .section-title-formulari {
@@ -69,7 +76,7 @@ body{
 
 .textSeccio2Calendari {
     text-align: center;
-    font-size: 20px ;
+    font-size: 20px;
     background-color: #efefef;
 }
 
@@ -160,55 +167,104 @@ a.btn:focus {
     background: #efefef;
 }
 
-#cercador{
-    background-color: #ffeaa1 ;
+#cercador {
+    background-color: #ffeaa1;
 }
 
-.textSeccio1Calendari{
+.textSeccio1Calendari {
     text-align: center;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
-#titolSeccio1Calendari{
+#titolSeccio1Calendari {
     font-size: 30px;
-  }
+}
+
 /*HEADER*/
 
-#capcalera{
+#capcalera {
     background-color: black;
     min-width: 100%;
 }
 
-.nav-link{
+.nav-link {
     color: white;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #ffeaa1;
 }
 
+/*event individual */
+
+#idEvent{
+    padding-top: 30px;
+}
+
+#organitzadorEvent{
+    padding: 20px;
+}
+
+#diaEvent{
+    padding: 0px;
+    margin: 0px;
+}
 
 
 
 /* Footer*/
 
-footer{
+footer {
     background-color: black;
 }
 
-#tiempo{
-    background-image:url("fondoprova.jpg");
-  
+#tiempo {
+    background-image: url("fondoprova.jpg");
+
 }
 
-#map{
+#map {
     max-height: 250px;
 }
 
+@media (min-width:200px) and (max-width: 767.5px) {
+
+    #temps {
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    #organitzadorEvent {
+        padding: 10px;
+    }
+
+    #infoEvent {
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-width:200px) and (max-width: 991.5px) {
+
+    #fotoQuiSsom {
+        padding-right: 0px;
+        padding-top: 25px;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width:200px) and (max-width: 884.5px) {
 
 
-
+    #idEvent{
+        padding-top: 10px;
+    }
+    #organitzadorEvent{
+        padding: 10px;
+    }
+}
