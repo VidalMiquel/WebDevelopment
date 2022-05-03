@@ -43,8 +43,7 @@ function dataVisualizar(data) {
 
     var data_filter = data.filter(element => element.identifier == type)
     for (let index = 0; index < data_filter.length; index++) {
-        visualitzarEvent(data_filter[index]);
-
+        visualitzarEvent(data_filter[index])
     }
 }
 
@@ -58,7 +57,7 @@ function visualitzarEvent(info) {
     crearBotoPrograma(info.datosextra.program);
 }
 
-function crearTitol(nom){
+function crearTitol(nom) {
     const titol = document.createElement("h1");
     titol.innerHTML = nom;
     titolEvent.appendChild(titol);
@@ -84,8 +83,6 @@ function crearBotoPrograma(programa) {
 
 
 function APItiempo(lat, lon) {
-
-
     var apiid = "17eaa46a6e0645c810da44bce335de2a";
     var xmlhttp = new XMLHttpRequest();
     var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&APPID=' + apiid;
@@ -154,23 +151,23 @@ function introduirMapa(lat, long) {
         accessToken: 'pk.eyJ1IjoidmlkYWxlZXQiLCJhIjoiY2wybm54amo2MjIxbTNpcDltZnl5bXNwMyJ9.UIILxO61B7Jn2dICDsyUtA'
     }).addTo(map);
 
-    var marker = L.marker([lat,long]).addTo(map);
+    var marker = L.marker([lat, long]).addTo(map);
 
     var home = document.getElementById("botoCentrar");
-    home.addEventListener("click", function(){
-        map.setView([lat,long], 14);
+    home.addEventListener("click", function () {
+        map.setView([lat, long], 14);
     });
 
 }
 
-function introduirFotografiaPrincipal(fotografia){
+function introduirFotografiaPrincipal(fotografia) {
     const imatge = document.createElement("img");
     imatge.className = "img-fluid";
     imatge.src = fotografia;
     imatgeEvent.appendChild(imatge);
 }
 
-function introduirInformacioEvent(event){
+function introduirInformacioEvent(event) {
 
     //Lloc de l'event
     const lloc = document.createElement("h1");
@@ -183,19 +180,19 @@ function introduirInformacioEvent(event){
     //Dia de l'event
     const dia = document.createElement("h5");
     dia.id = document.id = "diaEvent";
-    if(event.startDate == event.endDate){
+    if (event.startDate == event.endDate) {
         dia.innerHTML = event.startDate;
-        
-    }else{
+
+    } else {
         dia.innerHTML = "Del " + event.startDate + " fins al " + event.endDate;
-      
+
     }
     textHome.appendChild(lloc);
     textHome.appendChild(organitzador);
     textHome.appendChild(dia);
-   
 
-    
+
+
 }
 
 cargarDatos();
