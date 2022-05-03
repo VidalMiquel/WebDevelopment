@@ -50,7 +50,7 @@ function dataVisualizar(data) {
 
 function visualitzarEvent(info) {
 
-    crearTitol(info.name, info.location, info.organizer);
+    crearTitol(info.name);
     APItiempo(info.latitude, info.longitude);
     introduirMapa(info.latitude, info.longitude);
     introduirFotografiaPrincipal(info.datosextra.gallery[0]);
@@ -58,22 +58,10 @@ function visualitzarEvent(info) {
     crearBotoPrograma(info.datosextra.program);
 }
 
-function crearTitol(nom, lloc, organitzador) {
-    console.log(nom);
-    console.log(lloc);
-    console.log(organitzador);
+function crearTitol(nom){
     const titol = document.createElement("h1");
-    const geo = document.createElement("h2");
-    const org = document.createElement("h3");
     titol.innerHTML = nom;
-    titol.id = "titolEsdeveniments";
-    geo.innerHTML = lloc;
-    geo.id = "llocEvent";
-    org.innerHTML = organitzador;
-    org.id = "organitzadorEvent";
     titolEvent.appendChild(titol);
-    titolEvent.appendChild(geo);
-    titolEvent.appendChild(org);
 
 }
 
@@ -184,19 +172,17 @@ function introduirFotografiaPrincipal(fotografia){
 
 function introduirInformacioEvent(event){
 
-    //Descripcio de l'event
-    const descripcio = document.createElement("p");
-    descripcio.innerHTML = event.description;
-    descripcio.className = "p-3";
     //Lloc de l'event
     const lloc = document.createElement("h1");
     lloc.innerHTML = event.location;
+    lloc.id = "idEvent";;
     //Organitzador de l'event
     const organitzador = document.createElement("h3");
     organitzador.innerHTML = event.organizer;
-    organitzador.className = "p-3";
+    organitzador.id = "organitzadorEvent";
     //Dia de l'event
     const dia = document.createElement("h5");
+    dia.id = document.id = "diaEvent";
     if(event.startDate == event.endDate){
         dia.innerHTML = event.startDate;
         
@@ -207,7 +193,6 @@ function introduirInformacioEvent(event){
     textHome.appendChild(lloc);
     textHome.appendChild(organitzador);
     textHome.appendChild(dia);
-    textHome.appendChild(descripcio);
    
 
     
