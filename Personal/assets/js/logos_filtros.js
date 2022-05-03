@@ -72,7 +72,7 @@ function introduirMapa(dades) {
 
     for (let index = 0; index < dades.length; index++) {
         
-        introduirMarcador(map,dades[index].latitude, dades[index].longitude, dades[index].identifier);
+        introduirMarcador(map,dades[index]);
         
     }
 
@@ -80,13 +80,94 @@ function introduirMapa(dades) {
 
 }
 
-function introduirMarcador(map, lat,long, id){
-    var marker = L.marker([lat, long]).addTo(map);
+function introduirMarcador(map, event){
+
+    var myIcon = L.icon({
+        iconUrl: icone(event.about),
+        iconSize: [38, 95]
+    });
+
+    var marker = L.marker([event.latitude, event.longitude], {icon: myIcon}).addTo(map);
 
     var popup = L.popup();
-    popup.setContent( '<a href="event.html?eventType=' + id + '">Visit Google</a>"')
+    popup.setContent( '<a style = " text-decoration: none;" href="event.html?eventType=' + event.identifier + '">'+ event.name +'</a>')
     marker.bindPopup(popup);
+
+}
+
+function icone(tipus){
+    if(tipus == "fira"){
+        return "assets/svg/llocVerd.svg";
+    }else if (tipus == "verbena" ){
+        return "assets/svg/llocBlau.svg";
+    }else{
+        return "assets/svg/llocVermell.svg";
+    }
+}
+
+function afegirLlegenda(){
+
+    const llista = document.createElement("ul");
+    llista.id = "llegenda";
+    llista.className = "text-center justify-content-center";
+
+    const elementVerbena = document.createElement("li");
+    elementVerbena.className = "text-center";
+    elementVerbena.id = "elementllegenda1";
+    elementVerbena.style.paddingRight = "30px";
+
+
+    const elementFira = document.createElement("li");
+    elementFira.id = "elementllegenda2";
+    elementFira.className = "text-center";
+    elementFira.style.paddingRight = "20px";
+    elementFira.style.paddingLeft = "20px";
+
+    const elementConcert = document.createElement("li");
+    elementConcert.id = "elementllegenda3";
+    elementConcert.className = "text-center";
+   
+    const titolVerbena = document.createElement("h3");
+    const iconeVerbena = document.createElement("img");
+    titolVerbena.innerHTML = "Verbena";
+    iconeVerbena.src = "assets/svg/llocBlau.svg";
+    iconeVerbena.style.height = "50px";
+    iconeVerbena.style.width = "50px";
+    iconeVerbena.className = "img-fluid";
+
+    const titolFira = document.createElement("h3");
+    const iconeFira = document.createElement("img");
+    titolFira.innerHTML = "Fira";
+    iconeFira.src = "assets/svg/llocVerd.svg";
+    iconeVerbena.style.height = "50px";
+    iconeFira.style.width = "50px";
+    iconeFira.className = "img-fluid";
+
+    const titolConcert = document.createElement("h3");
+    const iconeConcert = document.createElement("img");
+    titolConcert.innerHTML = "Concert";
+    iconeConcert.src = "assets/svg/llocVermell.svg";
+    iconeConcert.style.height = "50px";
+    iconeConcert.style.width = "50px";
+    iconeConcert.className = "img-fluid";
+    
+
+    elementVerbena.appendChild(titolVerbena);
+    elementVerbena.appendChild(iconeVerbena);
+    elementFira.appendChild(titolFira);
+    elementFira.appendChild(iconeFira);
+    elementConcert.appendChild(titolConcert);
+    elementConcert.appendChild(iconeConcert);
+  
+    llista.appendChild(elementConcert);
+    llista.appendChild(elementFira);
+    llista.appendChild(elementVerbena);
+ 
+
+    llegendaMapaCercador.appendChild(llista);
+
 }
 
 introduirLogosFiltres();
 cargarDatos();
+afegirLlegenda();
