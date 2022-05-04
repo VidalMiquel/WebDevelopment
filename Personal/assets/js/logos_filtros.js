@@ -76,15 +76,18 @@ function introduirMapa(dades) {
         
     }
 
-    
 
+    var home = document.getElementById("botoCentrar");
+    home.addEventListener("click", function () {
+        map.setView([39.61799455956194, 2.9738029562237323 ], 9);
+    });
 }
 
 function introduirMarcador(map, event){
 
     var myIcon = L.icon({
         iconUrl: icone(event.about),
-        iconSize: [38, 95]
+        iconSize: [20, 20]
     });
 
     var marker = L.marker([event.latitude, event.longitude], {icon: myIcon}).addTo(map);
