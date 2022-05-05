@@ -224,7 +224,8 @@ a.btn:focus {
 }
 
 #twitter{
-    max-height: 100px;
+    max-height: 315px;
+    background-color: white;
 }
 
 /* Footer*/
