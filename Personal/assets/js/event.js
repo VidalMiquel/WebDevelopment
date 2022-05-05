@@ -170,22 +170,22 @@ function introduirIconesInformacio(){
     const logoTwitter = document.createElement('img');
     logoTwitter.src = "assets/svg/twitter.svg"
     logoTwitter.class = "image.fluid";
-    logoTwitter.style.height = "20px";
-    logoTwitter.style.width = "20px";
+    logoTwitter.style.height = "30px";
+    logoTwitter.style.width = "30px";
     xsocials.appendChild(logoTwitter);
 
     const logoLloc = document.createElement('img');
     logoLloc.src = "assets/svg/lloc.svg";
     logoLloc.class = "image.fluid";
-    logoLloc.style.height = "20px";
-    logoLloc.style.width = "20px";
+    logoLloc.style.height = "30px";
+    logoLloc.style.width = "30px";
     lloc.appendChild(logoLloc);
 
     const logoTemps = document.createElement('img');
     logoTemps.src = "assets/svg/temps.svg"
     logoTemps.class = "image.fluid";
-    logoTemps.style.height = "20px";
-    logoTemps.style.width = "20px";
+    logoTemps.style.height = "30px";
+    logoTemps.style.width = "30px";
     weather.appendChild(logoTemps);
 }
 
