@@ -56,6 +56,7 @@ function visualitzarEvent(info) {
     introduirInformacioEvent(info);
     crearBotoPrograma(info.datosextra.program);
     botoPreferits(info.identifier);
+    introduirIconesInformacio();
 }
 
 function crearTitol(nom) {
@@ -163,6 +164,29 @@ function introduirMapa(lat, long) {
         map.setView([lat, long], 14);
     });
 
+}
+
+function introduirIconesInformacio(){
+    const logoTwitter = document.createElement('img');
+    logoTwitter.src = "assets/svg/twitter.svg"
+    logoTwitter.class = "image.fluid";
+    logoTwitter.style.height = "20px";
+    logoTwitter.style.width = "20px";
+    xsocials.appendChild(logoTwitter);
+
+    const logoLloc = document.createElement('img');
+    logoLloc.src = "assets/svg/lloc.svg";
+    logoLloc.class = "image.fluid";
+    logoLloc.style.height = "20px";
+    logoLloc.style.width = "20px";
+    lloc.appendChild(logoLloc);
+
+    const logoTemps = document.createElement('img');
+    logoTemps.src = "assets/svg/temps.svg"
+    logoTemps.class = "image.fluid";
+    logoTemps.style.height = "20px";
+    logoTemps.style.width = "20px";
+    weather.appendChild(logoTemps);
 }
 
 function introduirFotografiaPrincipal(fotografia) {
