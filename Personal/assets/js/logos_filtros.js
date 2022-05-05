@@ -9,16 +9,16 @@ function logoVerbena() {
     const logoVerbena = document.createElement('img');
     logoVerbena.src = "assets/svg/verbena.svg"
     logoVerbena.class = "image.fluid";
-    logoVerbena.style.height = "40px";
-    logoVerbena.style.width = "40px";
+    logoVerbena.style.height = "60px";
+    logoVerbena.style.width = "60px";
     svgVerbena.appendChild(logoVerbena);
 }
 function logoFira() {
     const logoFira = document.createElement('img');
     logoFira.src = "assets/svg/fira.svg"
     logoFira.class = "image.fluid";
-    logoFira.style.height = "40px";
-    logoFira.style.width = "40px";
+    logoFira.style.height = "60px";
+    logoFira.style.width = "60px";
     svgFira.appendChild(logoFira);
 }
 
@@ -26,8 +26,8 @@ function logoConcert() {
     const logoConcert = document.createElement('img');
     logoConcert.src = "assets/svg/concert.svg"
     logoConcert.class = "image.fluid";
-    logoConcert.style.height = "40px";
-    logoConcert.style.width = "40px";
+    logoConcert.style.height = "60px";
+    logoConcert.style.width = "60px";
     svgConcert.appendChild(logoConcert);
 }
 
@@ -35,8 +35,8 @@ function logoPreferits() {
     const logoPreferits = document.createElement('img');
     logoPreferits.src = "assets/svg/preferit.svg"
     logoPreferits.class = "image.fluid";
-    logoPreferits.style.height = "40px";
-    logoPreferits.style.width = "40px";
+    logoPreferits.style.height = "60px";
+    logoPreferits.style.width = "60px";
     svgPreferits.appendChild(logoPreferits);
 }
 
