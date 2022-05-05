@@ -223,7 +223,9 @@ a.btn:focus {
     margin: 0px;
 }
 
-
+#twitter{
+    max-height: 100px;
+}
 
 /* Footer*/
 

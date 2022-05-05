@@ -55,6 +55,7 @@ function visualitzarEvent(info) {
     introduirFotografiaPrincipal(info.datosextra.gallery[0]);
     introduirInformacioEvent(info);
     crearBotoPrograma(info.datosextra.program);
+    botoPreferits(info.identifier);
 }
 
 function crearTitol(nom) {
@@ -63,7 +64,11 @@ function crearTitol(nom) {
     titolEvent.appendChild(titol);
 
 }
+function botoPreferits(id) {
+    const boto = document.getElementById("botoPreferit");
+    boto.setAttribute("value", id);
 
+}
 function crearBotoPrograma(programa) {
     const linkDescarrega = document.createElement("a");
     linkDescarrega.href = programa;
@@ -190,6 +195,12 @@ function introduirInformacioEvent(event) {
     textHome.appendChild(lloc);
     textHome.appendChild(organitzador);
     textHome.appendChild(dia);
+
+}
+
+
+
+function afegirPreferits(objecte) {
 
 
 
