@@ -78,6 +78,8 @@ function visualitzarEvent(data) {
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
     logo = document.createElement('img');
+    logo.style.height = "60px";
+    logo.style.width = "60px";
     if(data.about == "fira"){
         logo.src = "assets/svg/fira.svg"
     }else if (data.about == "verbena") {
