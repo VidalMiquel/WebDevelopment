@@ -79,9 +79,11 @@ function introduirMapa(dades) {
     }).addTo(map);
 
     for (let index = 0; index < dades.length; index++) {
-        
-        introduirMarcador(map,dades[index]);
-        
+        let date = new Date();
+        var actualDate = date.toISOString();
+        if(dades[index].startDate >= actualDate){
+            introduirMarcador(map,dades[index]);
+        }   
     }
 
 

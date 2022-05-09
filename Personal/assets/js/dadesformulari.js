@@ -1,3 +1,9 @@
+/*
+NOM DEL FITXER: dadesformulari.js
+FUNCIONALITAT: obté i emmagatzema els valors dels camps del formulari a una base de dades que ens aporta el nostre host.
+ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
+*/
+
 (function() {
     var firebaseConfig = {
         apiKey: "AIzaSyCOePpKpuQI7GfldXEDyEwAcVgp5O-9LvI",
@@ -35,7 +41,7 @@
             .catch(function(error) {
                 console.error("Message could not be sent: ", error);
             });
-        alert("missatge ep.");
+        alert("Formulari registrat correctament.");
     }
 
     var contact_submit = function(){

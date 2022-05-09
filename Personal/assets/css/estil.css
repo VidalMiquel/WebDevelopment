@@ -108,6 +108,10 @@ a.btn:focus {
     margin: 20px;
 }
 
+.btn-skin-home{
+    background-color: #FFC700;
+}
+
 .btn-skin:hover,
 .btn-skin:focus,
 .btn-skin:active,
@@ -258,6 +262,12 @@ footer {
     #infoEvent {
         padding-bottom: 0px;
     }
+
+
+}
+
+#mapa{
+    height: 300px;
 }
 
 @media (min-width:200px) and (max-width: 991.5px) {

@@ -133,7 +133,7 @@ function montarInfoTiempo(dades) {
     tiempo.appendChild(temperaturaActualTitol);
     tiempo.appendChild(temperaturaActual);
     tiempo.appendChild(iconeTemperatura);
-    contenidor.className = "text-justify";
+    contenidor.className = "text-center";
     contenidor.appendChild(temperaturaMaxTitol);
     contenidor.appendChild(temperaturaDiaMax);
     contenidor.appendChild(temperaturaMinTitol);
