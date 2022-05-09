@@ -40,22 +40,36 @@ function cargarDatos() {
 }
 
 function dataVisualizar(data) {
+
+    let date = new Date();
+    var actualDate = date.toISOString();
+
     const tit = document.createElement("h1");
     tit.innerHTML = type;
     titolSeccio.appendChild(tit);
 
-    if(type == "tots"){
-        for (let index = 0; index < data.length; index++) {
-            visualitzarEvent(data[index]);
-        }
-    }else{
-        var data_filter = data.filter(element => element.about == type)
-        console.log(data_filter);
-        for (let index = 0; index < data_filter.length; index++) {
-            visualitzarEvent(data_filter[index]);
-        }
+
+    var data_filter = data.filter(element => element.about == type)
+    sortJSON(data_filter, 'startDate', 'asc');
+    for (let index = 0; index < data_filter.length; index++) {
+        visualitzarEvent(data_filter[index]);
     }
 
+}
+
+function sortJSON(data, key, orden) {
+    return data.sort(function (a, b) {
+        var x = a[key],
+        y = b[key];
+
+        if (orden === 'asc') {
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        }
+
+        if (orden === 'desc') {
+            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        }
+    });
 }
 
 function visualitzarEvent(data) {
@@ -69,26 +83,26 @@ function visualitzarEvent(data) {
     const text = document.createElement("p");
     const dia = document.createElement("p");
     dia.innerHTML = data.startDate;
-    contenidor.className = "col-lg-4 col-md-6 d-flex align-items-stretch ";
+    contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
     logo = document.createElement('img');
     logo = document.createElement('img');
     logo.style.height = "60px";
     logo.style.width = "60px";
-    if(data.about == "fira"){
+    if (data.about == "fira") {
         logo.src = "assets/svg/fira.svg"
-    }else if (data.about == "verbena") {
+    } else if (data.about == "verbena") {
         logo.src = "assets/svg/verbena.svg";
-    }else if(data.about == "concert"){
+    } else if (data.about == "concert") {
         logo.src = "assets/svg/concert.svg"
     }
-    
+
     logo.class = "image.fluid";
     contenidor3.appendChild(logo);
     link1.innerHTML = data.name;
     text.innerHTML = data.description;
-    link2.href="event.html?eventType=" + data.identifier ;
+    link2.href = "event.html?eventType=" + data.identifier;
     link2.className = "btn btn-skin btn--radius-2";
     link2.innerHTML = "Veure esdeveniment";
     titol.appendChild(link1);

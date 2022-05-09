@@ -15,8 +15,6 @@ function cargarDatos() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             dades = JSON.parse(xmlhttp.responseText);
             sortJSON(dades, 'startDate', 'asc');
-            console.log(dades);
-            //console.log(dades.sort((a, b) => a.startDate > b.startDate));
             dataVisualizar(dades);
         }
     };
@@ -31,7 +29,7 @@ function dataVisualizar(data) {
     var i = 0;
     for (let index = 0; index < data.length; index++) {
         if (i < 6) {
-            if (data[index].startDate > actualDate) {
+            if (data[index].startDate >= actualDate) {
                 visualitzarEvent(data[index]);
                 i++;
             }
@@ -42,11 +40,6 @@ function dataVisualizar(data) {
     }
 }
 
-function ordenarAscedentment(fitxer, clau){
-    fitxer.sort(function (a,b){
-        return a[clau] < b[clau];
-    });
-}
 
 function sortJSON(data, key, orden) {
     return data.sort(function (a, b) {
@@ -74,7 +67,7 @@ function visualitzarEvent(data) {
     const text = document.createElement("p");
     const dia = document.createElement("p");
     dia.innerHTML = data.startDate;
-    contenidor.className = "col-lg-4 col-md-6 d-flex align-items-stretch ";
+    contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
     logo = document.createElement('img');
