@@ -86,8 +86,8 @@
                                         <div class="name">Nom de l'esdeveniment</div>
                                         <div class="value">
                                             <div class="input-group">
-                                                <input class="input--style-5" type="text" name="company"
-                                                    placeholder="Introudeix nom de l'event">
+                                                <input id="name" class="input--style-5" type="text" name="company" required
+                                                    placeholder="Introudeix nom de l'event" >
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                         <div class="name">Organitzador</div>
                                         <div class="value">
                                             <div class="input-group">
-                                                <input class="input--style-5" type="text" name="company"
+                                                <input id= "organizer"class="input--style-5" type="text" name="company"
                                                     placeholder="Introdueix nom de l'organitzador">
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@
                                         <div class="name">Email</div>
                                         <div class="value">
                                             <div class="input-group">
-                                                <input class="input--style-5" type="email" name="email"
+                                                <input id="email" type="email" class="input--style-5" name="email"
                                                     placeholder="Introdueix email de contacte">
                                             </div>
                                         </div>
@@ -112,11 +112,11 @@
                                     <div class="form-row col-lg-12">
                                         <div class="col-lg-6" data-aos="fade-right">
                                             <div class="name">Dia inici</div>
-                                            <input type="date" id="finish" name="trip-start">
+                                            <input id="startDate" type="date"  name="trip-start">
                                         </div>
                                         <div class="col-lg-6" data-aos="fade-left">
                                             <div class="name">Dia fi</div>
-                                            <input type="date" id="finish" name="trip-start">
+                                            <input id= "endDate" type="date" name="trip-start">
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -124,7 +124,7 @@
                                         <div class="value">
                                             <div class="col-12">
                                                 <div class="input-group-desc">
-                                                    <input class="input--style-5" type="text" name="phone"
+                                                    <input id= "telefon" class="input--style-5" type="text" name="phone"
                                                         placeholder="Introdueix telèfon de contacte">
                                                 </div>
                                             </div>
@@ -134,12 +134,12 @@
                                         <div class="name">Tipus</div>
                                         <div class="value">
                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                <select class="form-select form-select-sm"
+                                                <select id="type" class="form-select form-select-sm"
                                                     aria-label=".form-select-sm example">
                                                     <option selected>Selecciona</option>
-                                                    <option value="1">Fira</option>
-                                                    <option value="2">Verbena</option>
-                                                    <option value="3">Concert</option>
+                                                    <option value="fira">Fira</option>
+                                                    <option value="verbena">Verbena</option>
+                                                    <option value="concert">Concert</option>
                                                 </select>
                                                 <div class="select-dropdown"></div>
                                             </div>
@@ -148,20 +148,20 @@
                                     <div class="form-row">
                                         <div class="name">Programa</div>
                                         <div class="mb-3">
-                                            <input class="form-control " type="file" id="formFile">
+                                            <input id= "program" class="form-control " type="file" id="formFile">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="name">Descripció</div>
                                         <div class="value">
                                             <div class="form-group">
-                                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1"
+                                                <textarea id="description" class="form-control mb-2" id="exampleFormControlTextarea1"
                                                     placeholder="Introdueix una breu descripcó de l'esdeveniment"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <button href = "#"class=" btn btn-skin btn--radius-2 ">Enviar Formulari</button>
+                                        <button type="button" id="submit_msg" class="btn btn-skin btn--radius-2 ">Enviar Formulari</button>
                                     </div>
                                 </form>
                             </div>
@@ -199,12 +199,9 @@
 
     <script src="assets/js/generalitats.js" language="javascript"></script>
     <script src="assets/js/sis_proxims_events.js" language="javascript"></script>
-    <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.js"> </script>
     <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-
-
-
-</body>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="assets/js/dadesformulari.js"> </script>
 
 </html>
