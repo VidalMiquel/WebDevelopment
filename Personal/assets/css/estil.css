@@ -228,6 +228,14 @@ a.btn:focus {
     background-color: white;
 }
 
+#diaEvent  {
+    font-weight: bold;
+}
+
+#titolEvent{
+    font-weight: bold;
+}
+
 /* Footer*/
 
 footer {
