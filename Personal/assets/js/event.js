@@ -201,7 +201,7 @@ function introduirInformacioEvent(event) {
     //Lloc de l'event
     const lloc = document.createElement("h1");
     lloc.innerHTML = event.location;
-    lloc.id = "idEvent";;
+    lloc.id = "idEvent";
     //Organitzador de l'event
     const organitzador = document.createElement("h3");
     organitzador.innerHTML = event.organizer;
@@ -216,9 +216,13 @@ function introduirInformacioEvent(event) {
         dia.innerHTML = "Del " + event.startDate + " fins al " + event.endDate;
 
     }
+    const descripcio = document.createElement("p");
+    descripcio.innerHTML = event.description;
+    descripcio.className ="pt-2";
     textHome.appendChild(lloc);
     textHome.appendChild(organitzador);
     textHome.appendChild(dia);
+    textHome.appendChild(descripcio);
 
 }
 
