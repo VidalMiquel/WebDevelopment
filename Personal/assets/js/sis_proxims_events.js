@@ -61,12 +61,13 @@ function visualitzarEvent(data) {
     const contenidor2 = document.createElement("div");
     const contenidor3 = document.createElement("div");
     const contenidor4 = document.createElement("div");
-    const titol = document.createElement("h4");
-    const link1 = document.createElement("a");
+    const titol = document.createElement("h2");
     const link2 = document.createElement("a");
     const text = document.createElement("p");
-    const dia = document.createElement("p");
+    const lloc = document.createElement("h4");
+    const dia = document.createElement("h5");
     dia.innerHTML = data.startDate;
+    dia.id = "diaEvent";
     contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
@@ -80,17 +81,18 @@ function visualitzarEvent(data) {
     }else if(data.about == "concert"){
         logo.src = "assets/svg/concert.svg"
     }
-    
+    lloc.innerHTML = data.location;
     logo.class = "image.fluid";
     contenidor3.appendChild(logo);
-    link1.innerHTML = data.name;
+    titol.innerHTML = data.name;
+    titol.id = "titolEvent";
     text.innerHTML = data.description;
     link2.href="event.html?eventType=" + data.identifier ;
     link2.className = "btn btn-skin btn--radius-2";
     link2.innerHTML = "Veure esdeveniment";
-    titol.appendChild(link1);
     contenidor2.appendChild(contenidor3);
     contenidor2.appendChild(titol);
+    contenidor2.appendChild(lloc);
     contenidor2.appendChild(dia);
     contenidor2.appendChild(text);
     contenidor2.appendChild(link2);
