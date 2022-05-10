@@ -108,8 +108,8 @@ a.btn:focus {
     margin: 20px;
 }
 
-.btn-skin-home{
-    background-color: #FFC700;
+#botoHome{
+    margin:0px;
 }
 
 .btn-skin:hover,
@@ -213,10 +213,6 @@ a.btn:focus {
 }
 
 /*event individual */
-
-#idEvent {
-    padding-top: 30px;
-}
 
 #diaEvent {
     padding: 0px;
