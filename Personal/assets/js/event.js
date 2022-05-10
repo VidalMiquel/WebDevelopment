@@ -68,6 +68,7 @@ function crearTitol(nom) {
 function botoPreferits(id) {
     const boto = document.getElementById("botoPreferit");
     boto.setAttribute("value", id);
+    boto.innerHTML = "Afegir Preferits";
 
 }
 function crearBotoPrograma(programa) {
@@ -229,7 +230,35 @@ function introduirInformacioEvent(event) {
 
 
 function afegirPreferits(objecte) {
+    console.log(objecte.innerHTML);
 
+    if(objecte.innerHTML == "Afegir Preferits"){
+            
+
+        var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades')) || [];
+        if(eventsEmmagazemats.indexOf(objecte.value) == -1){
+            eventsEmmagazemats.push(objecte.value);
+            console.log(eventsEmmagazemats);
+            localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
+           
+        }
+
+        objecte.innerHTML = "Eliminar Preferits";
+
+
+    }else if (objecte.innerHTML == "Eliminar Preferits"){
+
+        var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades'));
+        eventsEmmagazemats.pop(objecte.value);
+        console.log(eventsEmmagazemats);
+        if(eventsEmmagazemats.length){
+            localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
+        }else{
+            localStorage.clear();
+        }
+
+        objecte.innerHTML = "Afegir Preferits";
+    }
 
 
 }

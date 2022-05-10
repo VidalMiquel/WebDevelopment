@@ -49,10 +49,25 @@ function dataVisualizar(data) {
     titolSeccio.appendChild(tit);
 
 
-    var data_filter = data.filter(element => element.about == type)
-    sortJSON(data_filter, 'startDate', 'asc');
-    for (let index = 0; index < data_filter.length; index++) {
-        visualitzarEvent(data_filter[index]);
+    if(type != 'preferits'){
+        var data_filter = data.filter(element => element.about == type)
+        sortJSON(data_filter, 'startDate', 'asc');
+        for (let index = 0; index < data_filter.length; index++) {
+            visualitzarEvent(data_filter[index]);
+        }
+    }else{
+        var preferits = JSON.parse(localStorage.getItem('dades'));
+        console.log(preferits);
+        if(preferits){
+            for (let i = 0; i < preferits.length; i++) {
+                var data_filter = data.filter(element => element.identifier == preferits[i]);
+                console.log(data_filter);
+                visualitzarEvent(data_filter[0]);
+            }    
+        }else{
+            alert("No hi ha preferits")
+        }
+
     }
 
 }
