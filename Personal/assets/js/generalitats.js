@@ -74,6 +74,8 @@ function introduirLogo() {
 }
 
 
+
+
 introduirLogo();
 introduirXarxes();
 

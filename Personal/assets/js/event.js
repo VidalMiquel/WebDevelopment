@@ -65,6 +65,7 @@ function crearTitol(nom) {
     titolEvent.appendChild(titol);
 
 }
+
 function botoPreferits(id) {
 
     const boto = document.getElementById("botoPreferit");
@@ -76,11 +77,8 @@ function botoPreferits(id) {
     } else {
         boto.innerHTML = "Eliminar Preferits";
     }
-
-
-
-
 }
+
 function crearBotoPrograma(programa) {
     const linkDescarrega = document.createElement("a");
     linkDescarrega.href = programa;
@@ -152,9 +150,6 @@ function montarInfoTiempo(dades) {
     contenidor.appendChild(temperaturaMinTitol);
     contenidor.appendChild(temperaturaDiaMin);
     tiempo.appendChild(contenidor);
-
-
-
 }
 
 function introduirMapa(lat, long) {
