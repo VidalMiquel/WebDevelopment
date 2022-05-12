@@ -66,9 +66,19 @@ function crearTitol(nom) {
 
 }
 function botoPreferits(id) {
+
     const boto = document.getElementById("botoPreferit");
     boto.setAttribute("value", id);
-    boto.innerHTML = "Afegir Preferits";
+    var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades')) || [];
+    if (eventsEmmagazemats.indexOf(id) == -1) {
+        boto.innerHTML = "Afegir Preferits";
+
+    } else {
+        boto.innerHTML = "Eliminar Preferits";
+    }
+
+
+
 
 }
 function crearBotoPrograma(programa) {
@@ -167,7 +177,7 @@ function introduirMapa(lat, long) {
 
 }
 
-function introduirIconesInformacio(){
+function introduirIconesInformacio() {
     const logoTwitter = document.createElement('img');
     logoTwitter.src = "assets/svg/twitter.svg"
     logoTwitter.class = "image.fluid";
@@ -219,7 +229,7 @@ function introduirInformacioEvent(event) {
     }
     const descripcio = document.createElement("p");
     descripcio.innerHTML = event.description;
-    descripcio.className ="pt-2";
+    descripcio.className = "pt-2";
     textHome.appendChild(lloc);
     textHome.appendChild(organitzador);
     textHome.appendChild(dia);
@@ -230,37 +240,24 @@ function introduirInformacioEvent(event) {
 
 
 function afegirPreferits(objecte) {
-    console.log(objecte.innerHTML);
-
-    if(objecte.innerHTML == "Afegir Preferits"){
-            
-
+    if (objecte.innerHTML == "Afegir Preferits") {
         var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades')) || [];
-        if(eventsEmmagazemats.indexOf(objecte.value) == -1){
+        if (eventsEmmagazemats.indexOf(objecte.value) == -1) {
             eventsEmmagazemats.push(objecte.value);
-            console.log(eventsEmmagazemats);
             localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
-           
         }
-
         objecte.innerHTML = "Eliminar Preferits";
-
-
-    }else if (objecte.innerHTML == "Eliminar Preferits"){
-
+    } else if (objecte.innerHTML == "Eliminar Preferits") {
         var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades'));
         eventsEmmagazemats.pop(objecte.value);
-        console.log(eventsEmmagazemats);
-        if(eventsEmmagazemats.length){
+        if (eventsEmmagazemats.length) {
             localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
-        }else{
+        } else {
             localStorage.clear();
         }
-
         objecte.innerHTML = "Afegir Preferits";
     }
-
-
 }
+
 
 cargarDatos();
