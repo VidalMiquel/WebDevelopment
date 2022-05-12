@@ -7,7 +7,8 @@ ON TROBAM AQUESTA FUNCINALITAT: cercador.html
 
 function logoVerbena() {
     const logoVerbena = document.createElement('img');
-    logoVerbena.src = "assets/svg/verbena.svg"
+    logoVerbena.src = "assets/svg/verbena.svg";
+    logoVerbena.alt = "Logotip event verbena";
     logoVerbena.class = "image.fluid";
     logoVerbena.style.height = "60px";
     logoVerbena.style.width = "60px";
@@ -15,7 +16,8 @@ function logoVerbena() {
 }
 function logoFira() {
     const logoFira = document.createElement('img');
-    logoFira.src = "assets/svg/fira.svg"
+    logoFira.src = "assets/svg/fira.svg";
+    logoFira.alt = "Logotip event fira";
     logoFira.class = "image.fluid";
     logoFira.style.height = "60px";
     logoFira.style.width = "60px";
@@ -24,7 +26,8 @@ function logoFira() {
 
 function logoConcert() {
     const logoConcert = document.createElement('img');
-    logoConcert.src = "assets/svg/concert.svg"
+    logoConcert.src = "assets/svg/concert.svg";
+    logoConcert.alt = "Logotip event concert";
     logoConcert.class = "image.fluid";
     logoConcert.style.height = "60px";
     logoConcert.style.width = "60px";
@@ -33,7 +36,8 @@ function logoConcert() {
 
 function logoPreferits() {
     const logoPreferits = document.createElement('img');
-    logoPreferits.src = "assets/svg/preferit.svg"
+    logoPreferits.src = "assets/svg/preferit.svg";
+    logoPreferits.alt = "Logotip event preferits";
     logoPreferits.class = "image.fluid";
     logoPreferits.style.height = "60px";
     logoPreferits.style.width = "60px";
@@ -144,6 +148,7 @@ function afegirLlegenda(){
     const iconeVerbena = document.createElement("img");
     titolVerbena.innerHTML = "Verbena";
     iconeVerbena.src = "assets/svg/llocBlau.svg";
+    iconeVerbena.alt = "Marcador event verbena";
     iconeVerbena.style.height = "50px";
     iconeVerbena.style.width = "50px";
     iconeVerbena.className = "img-fluid";
@@ -152,6 +157,7 @@ function afegirLlegenda(){
     const iconeFira = document.createElement("img");
     titolFira.innerHTML = "Fira";
     iconeFira.src = "assets/svg/llocVerd.svg";
+    iconeFira.alt = "Marcador event fira";
     iconeVerbena.style.height = "50px";
     iconeFira.style.width = "50px";
     iconeFira.className = "img-fluid";
@@ -160,6 +166,7 @@ function afegirLlegenda(){
     const iconeConcert = document.createElement("img");
     titolConcert.innerHTML = "Concert";
     iconeConcert.src = "assets/svg/llocVermell.svg";
+    iconeConcert.alt = "Marcador event concert";
     iconeConcert.style.height = "50px";
     iconeConcert.style.width = "50px";
     iconeConcert.className = "img-fluid";

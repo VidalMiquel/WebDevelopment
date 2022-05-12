@@ -64,8 +64,8 @@ function visualitzarEvent(data) {
     const titol = document.createElement("h2");
     const link2 = document.createElement("a");
     const text = document.createElement("p");
-    const lloc = document.createElement("h4");
-    const dia = document.createElement("h5");
+    const lloc = document.createElement("h3");
+    const dia = document.createElement("h4");
     dia.innerHTML = data.startDate;
     dia.id = "diaEvent";
     contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
@@ -76,12 +76,16 @@ function visualitzarEvent(data) {
     logo.style.width = "60px";
     if(data.about == "fira"){
         logo.src = "assets/svg/fira.svg"
+        logo.alt = "Logotip de l'event de tipus fira";
     }else if (data.about == "verbena") {
         logo.src = "assets/svg/verbena.svg";
+        logo.alt = "Logotip de l'event de tipus verbena";
     }else if(data.about == "concert"){
         logo.src = "assets/svg/concert.svg"
+        logo.alt = "Logotip de l'event de tipus concert";
     }
     lloc.innerHTML = data.location;
+    lloc.id = "llocEvent";
     logo.class = "image.fluid";
     contenidor3.appendChild(logo);
     titol.innerHTML = data.name;
