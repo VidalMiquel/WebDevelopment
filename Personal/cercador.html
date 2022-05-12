@@ -2,11 +2,14 @@
 <html lang="es">
 
 <head>
+    <title>MallorcaEvents</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-    <title>Miquel Vidal Cortes</title>
+    <meta name="description" content="4 tipus de filtres (fira, verbena, concerts, preferits) diferents que et permeten trobar esdeveniments. A més, un mapa que geolocalitza la ubicació exacte de tots els events."> 
+    <meta name="keywords" content="fira, concert, verbena, preferits, indrets, Mallorca, visualitza, esdeveniments">
+    <meta name="author" content="Miquel Vidal Cortés">
+    <meta name="copyright" content="Miquel Vidal Cortés">
 
 
     <!-- Favicons -->
@@ -42,7 +45,7 @@
                 </div>
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="qui_som.html" class="nav-link">Qui som</a></li>
+                    <li class="nav-item"><a href="quisom.html" class="nav-link">Qui som</a></li>
                     <li class="nav-item"><a href="esdeveniments.html" class="nav-link">Events</a></li>
                     <li class="nav-item"><a href="cercador.html" class="nav-link">Cercador</a></li>
                 </ul>
@@ -66,7 +69,7 @@
                     <div class="icon" id="svgFira"></div>
                     <h4><a>Fira</a></h4>
                     <p>Visualitza les pròximes fires que es realitzaran a diferents indrets de Mallorca</p>
-                    <a href="events_per_tipus.html?eventType=fira" class="btn btn-skin btn--radius-2">Veure
+                    <a href="eventspertipus.html?eventType=fira" class="btn btn-skin btn--radius-2">Veure
                         Fires</a>
                 </div>
             </div>
@@ -75,7 +78,7 @@
                     <div class="icon" id="svgVerbena"></div>
                     <h4><a>Verbena</a></h4>
                     <p>Visualitza les pròximes verbenes que es realitzaran a diferents indrets de Mallorca</p>
-                    <a href="events_per_tipus.html?eventType=verbena" class="btn btn-skin btn--radius-2">Veure
+                    <a href="eventspertipus.html?eventType=verbena" class="btn btn-skin btn--radius-2">Veure
                         Verbenes</a>
                 </div>
             </div>
@@ -84,7 +87,7 @@
                     <div class="icon" id="svgConcert"></div>
                     <h4><a>Concert</a></h4>
                     <p>Visualitza els pròxims concerts que es realitzaran a diferents indrets de Mallorca</p>
-                    <a href="events_per_tipus.html?eventType=concert" class="btn btn-skin btn--radius-2">Veure
+                    <a href="eventspertipus.html?eventType=concert" class="btn btn-skin btn--radius-2">Veure
                         Concerts</a>
                 </div>
             </div>
@@ -94,7 +97,7 @@
                     <h4><a>Preferits</a></h4>
                     <p>Visualitza els teus events preferits que es realitzaran a diferents indrets de
                         Mallorca</p>
-                    <a href="events_per_tipus.html?eventType=preferits" class="btn btn-skin btn--radius-2">Veure
+                    <a href="eventspertipus.html?eventType=preferits" class="btn btn-skin btn--radius-2">Veure
                         Preferits</a>
                 </div>
             </div>
@@ -138,7 +141,7 @@
                 </div>
                 <div class="text-center col-lg-12 border-bottom  ">
                 </div>
-                <p class="text-center text-muted pt-2 ">© 2022 MallorcaEvents</p>
+                <p id="copyright" class="text-center  pt-2 ">© 2022 MallorcaEvents</p>
             </div>
         </div>
 

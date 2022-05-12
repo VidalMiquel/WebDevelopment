@@ -18,6 +18,7 @@ function introduirXarxes() {
     logoTwitter.target = "_blank";
     logoTwitter.className = "nav-link";
     svgTwitter.src = "assets/svg/twitter.svg";
+    svgTwitter.alt = "Logotip de Twitter";
     svgTwitter.className = "image-fluid";
     logoTwitter.appendChild(svgTwitter);
     twitter.appendChild(logoTwitter);
@@ -33,6 +34,7 @@ function introduirXarxes() {
     logoInstagram.target = "_blank";
     logoInstagram.className = "nav-link";
     svgInstagram.src = "assets/svg/instagram.svg";
+    svgInstagram.alt = "Logotip de Instagram";
     svgInstagram.className = "image-fluid";
     logoInstagram.appendChild(svgInstagram);
     instagram.appendChild(logoInstagram);
@@ -48,6 +50,7 @@ function introduirXarxes() {
     logoLinkedin.target = "_blank";
     logoLinkedin.className = "nav-link";
     svgLinkedin.src = "assets/svg/linkedin.svg";
+    svgLinkedin.alt = "Logotip de Linkedin";
     svgLinkedin.className = "image-fluid";
     logoLinkedin.appendChild(svgLinkedin);
     linkedin.appendChild(logoLinkedin);
@@ -62,6 +65,7 @@ function introduirLogo() {
     logoPaginaWeb.href = "index.html";
     svgLogo.src = "assets/svg/logo.svg";
     svgLogo.className = "image-fluid";
+    svgLogo.alt = "Logotip de la pàgina web";
     logoPaginaWeb.appendChild(svgLogo);
     logo.appendChild(logoPaginaWeb);
 
