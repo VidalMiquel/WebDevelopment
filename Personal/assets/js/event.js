@@ -107,7 +107,6 @@ function APItiempo(lat, lon) {
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             dades = JSON.parse(xmlhttp.responseText);
-            console.log(dades);
             montarInfoTiempo(dades);
         }
     };
@@ -133,7 +132,10 @@ function montarInfoTiempo(dades) {
     const temperaturaDiaMin = document.createElement("p");
     const iconeTemperatura = document.createElement("img");
     iconeTemperatura.src = url;
+    iconeTemperatura.style.height = "100px";
+    iconeTemperatura.style.width = "100px";
     iconeTemperatura.className = "img-fluid";
+    iconeTemperatura.alt = "Logotip informatiu del temps actual";
     temperaturaActualTitol.innerHTML = "Temperatura actual";
     temperaturaActual.innerHTML = tmp_actual + "ºC";
     temperaturaActual.style.margin = "0";
@@ -183,6 +185,7 @@ function introduirIconesInformacio() {
     logoTwitter.class = "image.fluid";
     logoTwitter.style.height = "30px";
     logoTwitter.style.width = "30px";
+    logoTwitter.alt = "Logotip informatiu de twitter";
     xsocials.appendChild(logoTwitter);
 
     const logoLloc = document.createElement('img');
@@ -190,6 +193,7 @@ function introduirIconesInformacio() {
     logoLloc.class = "image.fluid";
     logoLloc.style.height = "30px";
     logoLloc.style.width = "30px";
+    logoLloc.alt = "Logotip informatiu de localització";
     lloc.appendChild(logoLloc);
 
     const logoTemps = document.createElement('img');
@@ -197,6 +201,7 @@ function introduirIconesInformacio() {
     logoTemps.class = "image.fluid";
     logoTemps.style.height = "30px";
     logoTemps.style.width = "30px";
+    logoTemps.alt = "Logotip informatiu del temps";
     weather.appendChild(logoTemps);
 }
 
@@ -204,6 +209,9 @@ function introduirFotografiaPrincipal(fotografia) {
     const imatge = document.createElement("img");
     imatge.className = "img-fluid";
     imatge.src = fotografia;
+    imatge.style.height = "400px";
+    imatge.style.width = "400px";
+    imatge.alt  = "imatge pricipal de l'event";
     imatgeEvent.appendChild(imatge);
 }
 
@@ -214,12 +222,11 @@ function introduirInformacioEvent(event) {
     lloc.innerHTML = event.location;
     lloc.id = "idEvent";
     //Organitzador de l'event
-    const organitzador = document.createElement("h3");
+    const organitzador = document.createElement("h2");
     organitzador.innerHTML = event.organizer;
     organitzador.id = "organitzadorEvent";
     //Dia de l'event
-    const dia = document.createElement("h5");
-    dia.id = document.id = "diaEvent";
+    const dia = document.createElement("h3");
     if (event.startDate == event.endDate) {
         dia.innerHTML = event.startDate;
 
