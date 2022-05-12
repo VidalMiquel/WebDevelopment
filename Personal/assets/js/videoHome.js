@@ -1,8 +1,6 @@
 function carregarHome() {
 
     cargarVideo();
-    cargarFoto();
-
 
 }
 
@@ -23,20 +21,6 @@ function cargarVideo() {
     video.play();
 
     videoHome.appendChild(video);
-}
-
-function cargarFoto() {
-
-
-    const fotografia = document.createElement("img");
-    fotografia.src = "assets/img/meva.png";
-    fotografia.className = "img-fluid";
-    fotografia.height = "300";
-    fotografia.width = "300";
-
-    fotoHome.appendChild(fotografia);
-
-
 }
 
 

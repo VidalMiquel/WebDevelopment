@@ -234,6 +234,9 @@ a.btn:focus {
 
 /* Footer*/
 
+#copyright{
+    color: white;
+}
 footer {
     background-color: black;
 }
