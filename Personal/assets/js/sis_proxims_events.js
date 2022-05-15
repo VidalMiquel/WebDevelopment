@@ -6,29 +6,39 @@ FUNCIONALITAT: viualitzar per pantalla els pròxims sis events a partir del dia 
 ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
 */
 
+/*
+Mètode que realitza la crida amb l'objectiu d'obtenir el fitxer JSON especificat a la URL.
+*/
 function cargarDatos() {
-
     var xmlhttp = new XMLHttpRequest();
+     //Fitxer a obtenir.
     var url = "assets/js/events.json";
-
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             dades = JSON.parse(xmlhttp.responseText);
+            //Ordenam el fitxer segons l'indicat. De manera ascendent segons el valor de 'startDate'.
+            //Tenim el fitxer ordenat de manera ascendent per dia inicial d l'event.
             sortJSON(dades, 'startDate', 'asc');
+            //Passam per paràmetre el contingut del fitxer per poder integrar-ho dins la pràctica.
             dataVisualizar(dades);
         }
     };
-
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
 
+/*
+Mètode que prepara les dades per ser visualitzades. En aquest cas,  s'integren els sis primers
+events que compleixin la condició dins l'html. 
+*/
 function dataVisualizar(data) {
     let date = new Date();
     var actualDate = date.toISOString();
     var i = 0;
     for (let index = 0; index < data.length; index++) {
+        //Integram dins l'html només 6 esdeveniments.
         if (i < 6) {
+            //Comprovam que l'event encara no ha ocorregut.
             if (data[index].startDate >= actualDate) {
                 visualitzarEvent(data[index]);
                 i++;

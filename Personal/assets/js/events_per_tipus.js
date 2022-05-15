@@ -22,54 +22,60 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 var type = getUrlParameter('eventType');
-console.log(type);
 
 
+/*
+Mètode que realitza la crida amb l'objectiu d'obtenir el fitxer JSON especificat a la URL.
+*/
 function cargarDatos() {
     var xmlhttp = new XMLHttpRequest();
+    //Fitxer a obtenir.
     var url = "assets/js/events.json";
+    //Realitzam crida.
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            //Parsejam el resultat de la crida per poder tractar les dades.
             dades = JSON.parse(xmlhttp.responseText);
+            //Passam per paràmetre el contingut del fitxer per poder integrar-ho dins la pràctica.
             dataVisualizar(dades);
         }
     };
-
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
 
+/*
+Mètode que filtra les dades segons l'indicat pre part de l'usuari. Feim servir el tipus obtingut anteriorment.
+*/
 function dataVisualizar(data) {
-
-    let date = new Date();
-    var actualDate = date.toISOString();
-
+    //Introduim el títiol de la seccio.
     const tit = document.createElement("h1");
     tit.innerHTML = type;
     titolSeccio.appendChild(tit);
-
-
+    //Obtenim el tipus d'esdeveniments a visualitzar.
     if(type != 'preferits'){
+        //Cas no preferits. Filtram segons tipus.
+        //Filtram el fitxer segons el tipus.
         var data_filter = data.filter(element => element.about == type)
+        //Ordenam segons la data d'inici
         sortJSON(data_filter, 'startDate', 'asc');
         for (let index = 0; index < data_filter.length; index++) {
             visualitzarEvent(data_filter[index]);
         }
     }else{
+        //Cas preferits.
         var preferits = JSON.parse(localStorage.getItem('dades'));
-        console.log(preferits);
+        //Si hi ha preferits.
         if(preferits){
             for (let i = 0; i < preferits.length; i++) {
+                //Filtram segons l'id.
                 var data_filter = data.filter(element => element.identifier == preferits[i]);
-                console.log(data_filter);
                 visualitzarEvent(data_filter[0]);
             }    
         }else{
             alert("No hi ha preferits")
         }
-
     }
-
 }
 
 function sortJSON(data, key, orden) {
