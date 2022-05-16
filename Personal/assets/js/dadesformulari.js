@@ -67,9 +67,83 @@ ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
             "program": program.value,
             "description" : description.value
         }
-        push_to_firebase(data);
+
+        if(validateFormulari(data)){
+            push_to_firebase(data);
+        }else{
+            alert("Formulari no enviat per incorrectesa dels camps");
+        }
+      
 
     }
 
     document.getElementById("submit_msg").addEventListener("click", contact_submit);
 })();
+
+function validateFormulari(data){
+
+    if(!data.name){
+        console.log("name");
+        var program =  document.getElementById("program");
+        return false;
+    }
+    if(emailVerification(data.email)){
+        console.log("email");
+        var correu = document.getElementById("email");
+        correu.value = " ";
+        return false;
+    }
+    if(!data.organizer){
+        console.log("organizer");
+        var organitzador = document.getElementById("organizer");
+        organitzador.value = " ";
+        return false;
+    }
+    if(!data.startDate){
+        console.log("startDate");
+        var diaInici = document.getElementById("startDate");
+        diaInici.value = " ";
+        return false;
+    }
+    if(dateVerification(data.startDate, data.endDate)){
+        var diaAcaba =  document.getElementById("endDate");
+        diaAcaba.value  = null;
+        console.log("endaDate");
+        return false;
+    }
+    if(telefonVerification(data.telefon)){
+        console.log("telefon");
+        var telefono =  document.getElementById("telefon");
+        telefono.value = " ";
+        return false;
+    }
+    if(!data.type){
+        console.log("type");
+        return false;
+    }
+    if(!data.program){
+        console.log("program");
+        return false;
+    }
+    if(!data.description){
+        console.log("descripton");
+        return false;
+    }
+    
+    return true;
+}
+
+
+function emailVerification(email){
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    return ! email.match(validRegex);
+}
+
+function telefonVerification(telefon){
+    var validRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{3})$/;
+    return !telefon.match(validRegex);
+}
+
+function dateVerification(startDate, endDate){  
+    return !(endDate && (startDate < endDate));
+}

@@ -91,8 +91,8 @@ function crearTitol(nom) {
 }
 
 /*
-Mètode que integra el botó de preferits dins l'html. Amb l'objectiu de nombrar correctament el boto (Afegir preferits o Eliminar preferits),
-realitzam una comprovació prèvia.
+Mètode que integra el botó de preferits dins l'html. Amb l'objectiu de nombrar correctament el boto 
+(Afegir preferits o Eliminar preferits), realitzam una comprovació prèvia.
 */
 function botoPreferits(id) {
     const boto = document.getElementById("botoPreferit");
