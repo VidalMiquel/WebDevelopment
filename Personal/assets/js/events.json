@@ -55,7 +55,7 @@
 			"socialnetworks": {
 				"hashtag": "CarnavalEstiuCampanet"
 			},
-			"gallery": ["assets/img/esdeveniments/carnavalCampanet1.jpg"],
+			"gallery": ["assets/img/esdeveniments/carnavalCampanet1.jpg", "assets/img/esdeveniments/carnavalCampanet2.jpg","assets/img/esdeveniments/carnavalCampanet3.jpg"],
 			"program": "assets/img/programes/carnavalCampanet.jpg"
 		}
 	},

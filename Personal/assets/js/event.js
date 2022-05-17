@@ -342,7 +342,8 @@ function galeria(galleria){
         imatge.src = galleria[index];
         imatge.alt = "imatge carusel";
         imatge.style.height = "500px";
-        imatge.style.width = "1100px";
+        imatge.style.width = "1000px";
+        imatge.className = "img-fluid";
         element.appendChild(imatge);
         carusel.appendChild(element);
     }
