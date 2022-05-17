@@ -220,10 +220,7 @@ a.btn:focus {
 .prova{
    background-color: #FFC700;
 }
-#imatgecarusel{
-    height: 30rem;
-    width: auto;
-}
+
 
 #llocEvent{
     font-weight: bold;
@@ -309,6 +306,24 @@ footer {
         padding: 10px;
     }
 }
+
+@media (min-width:500) and (max-width: 600.5px) {
+    #imatgecarusel{
+        height: 20rem;
+        width: auto;
+    }   
+}
+
+@media (min-width:400) and (max-width: 499.5px) {
+    #imatgecarusel{
+        height: 15rem;
+        width: auto;
+    }      
+}
+
+
+  
+
 
 #llegenda {
     list-style-type: none;
