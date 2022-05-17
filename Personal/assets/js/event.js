@@ -79,6 +79,8 @@ function visualitzarEvent(info) {
     botoPreferits(info.identifier);
     //Icones de lainformació rellevent (APIs).
     introduirIconesInformacio();
+    //Galeria de imatges.
+    galeria(info.datosextra.gallery);
 }
 
 /*
@@ -327,5 +329,35 @@ function afegirPreferits(objecte) {
     }
 }
 
+function galeria(galleria){
 
+    for (let index = 0; index < galleria.length; index++) {
+        const element = document.createElement("div");
+        if(index == 0){
+            element.className = "carousel-item active";
+        }else{
+            element.className = "carousel-item";
+        }
+        const imatge = document.createElement("img");
+        imatge.src = galleria[index];
+        imatge.alt = "imatge carusel";
+        imatge.style.height = "500px";
+        imatge.style.width = "1100px";
+        element.appendChild(imatge);
+        carusel.appendChild(element);
+    }
+
+}
+
+/*
+        <div class="carousel-item active">
+            <img src="assets/img/esdeveniments/canamuntCanavall1.jpg" alt="" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/esdeveniments/canamuntCanavall2.jpg" alt="Chicago" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/esdeveniments/canamuntCanavall3.jpg" alt="New York" width="1100" height="500">
+        </div>
+*/
 cargarDatos();
