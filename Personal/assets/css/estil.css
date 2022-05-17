@@ -217,6 +217,13 @@ a.btn:focus {
 }
 
 /*event individual */
+.prova{
+   background-color: #FFC700;
+}
+#imatgecarusel{
+    height: 30rem;
+    width: auto;
+}
 
 #llocEvent{
     font-weight: bold;
