@@ -215,7 +215,7 @@
 			"socialnetworks": {
 				"hashtag": "FiraCaragolSantJordi"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/firaCaragol1.jpg","assets/img/esdeveniments/firaCaragol2.jpg","assets/img/esdeveniments/firaCaragol3.jpg"],
 			"program": "assets/img/programes/firaCaragol.jpeg"
 		}
 	},
@@ -235,7 +235,7 @@
 			"socialnetworks": {
 				"hashtag": "NitArtPalma"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/nitArt1.jpg","assets/img/esdeveniments/nitArt2.jpg","assets/img/esdeveniments/nitArt3.jpg"],
 			"program": "assets/img/programes/nitArt.png"
 		}
 	},
@@ -255,7 +255,7 @@
 			"socialnetworks": {
 				"hashtag": "FiraPedraBinissalem"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/firaPedra1.jpg","assets/img/esdeveniments/firaPedra2.jpg","assets/img/esdeveniments/firaPedra3.jpg"],
 			"program": "assets/img/programes/firaPedra.png"
 		}
 	},
@@ -275,7 +275,7 @@
 			"socialnetworks": {
 				"hashtag": "MWTPalma"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/rosalia1.jpg","assets/img/esdeveniments/rosalia2.jpg","assets/img/esdeveniments/rosalia3.jpg"],
 			"program": "assets/img/programes/rosalia.jpg"
 		}
 	},
@@ -295,7 +295,7 @@
 			"socialnetworks": {
 				"hashtag": "EstopaPalma"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/giraFuego1.jpg", "assets/img/esdeveniments/giraFuego2.jpg", "assets/img/esdeveniments/giraFuego3.jpg"],
 			"program": "assets/img/programes/estopa.jpg"
 		}
 	},
@@ -315,7 +315,7 @@
 			"socialnetworks": {
 				"hashtag": "Mobofest"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/mobofest1.jpg", "assets/img/esdeveniments/mobofest2.jpg", "assets/img/esdeveniments/mobofest3.jpg"],
 			"program": "assets/img/programes/mobo.jpeg"
 		}
 	},
@@ -335,7 +335,7 @@
 			"socialnetworks": {
 				"hashtag": "Much"
 			},
-			"gallery": null,
+			"gallery": ["assets/img/esdeveniments/much1.jpg","assets/img/esdeveniments/much2.jpg","assets/img/esdeveniments/much3.jpg"],
 			"program": "assets/img/programes/much.jpg"
 		}
 	}
