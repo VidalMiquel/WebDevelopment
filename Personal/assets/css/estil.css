@@ -217,6 +217,11 @@ a.btn:focus {
 }
 
 /*event individual */
+
+#imatgecarusel{
+    height: 30rem;
+    width: auto;
+} 
 .prova{
    background-color: #FFC700;
 }
