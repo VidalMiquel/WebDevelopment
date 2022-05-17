@@ -218,10 +218,7 @@ a.btn:focus {
 
 /*event individual */
 
-#imatgecarusel{
-    height: 30rem;
-    width: auto;
-} 
+
 .prova{
    background-color: #FFC700;
 }
@@ -315,6 +312,13 @@ footer {
 @media (min-width:500) and (max-width: 600.5px) {
     #imatgecarusel{
         height: 20rem;
+        width: auto;
+    }   
+}
+
+@media (min-width:601px) and (max-width: 2200px) {
+    #imatgecarusel{
+        height: 30rem;
         width: auto;
     }   
 }
