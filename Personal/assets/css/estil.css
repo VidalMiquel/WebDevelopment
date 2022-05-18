@@ -218,7 +218,13 @@ a.btn:focus {
 
 /*event individual */
 
-#videoHome{
+#infoEvent{
+
+    padding: 4rem;
+}
+
+
+#videoEvent{
     width: auto;
     height: 20rem;
 }
@@ -334,6 +340,27 @@ footer {
     }      
 }
 
+
+@media (min-width:200px) and (max-width: 500px) {
+    #imatgeEvent{
+        padding-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 4rem;
+    }      
+}
+
+@media (min-width:501px) and (max-width: 2200px) {
+    #imatgeEvent{
+        padding:4rem;
+    }      
+}
+
+@media (min-width:200px) and (max-width: 767.5px) {
+    #videoEvent{
+        height:auto;
+    }      
+}
 
   
 

@@ -70,7 +70,7 @@ function visualitzarEvent(info) {
     //Localització de l'esdevenimet damunt un mapa.
     introduirMapa(info.latitude, info.longitude);
     //Fotografia principal de l'esdeveniment.
-    introduirFotografiaPrincipal(info.primaryImageOfPage);
+    introduirVideoPrincipal(info.datosextra.video, info.datosextra.careta);
     //Informació genèrique de l'esdeveniment.
     introduirInformacioEvent(info);
     //Boto per descarregar o visualitzar programa.
@@ -97,6 +97,7 @@ Mètode que integra el botó de preferits dins l'html. Amb l'objectiu de nombrar
 (Afegir preferits o Eliminar preferits), realitzam una comprovació prèvia.
 */
 function botoPreferits(id) {
+
     const boto = document.getElementById("botoPreferit");
     boto.setAttribute("value", id);
     //Comprovam si l'esdeveniment es troba entre els preferits de l'usuari o no.
@@ -259,32 +260,33 @@ function introduirIconesInformacio() {
 /*
 Mètode que integra la fotogrfia principal.
 */
-function introduirFotografiaPrincipal(fotografia) {
-   /*
-    const imatge = document.createElement("img");
-    imatge.className = "img-fluid";
-    imatge.src = fotografia;
-    imatge.style.height = "400px";
-    imatge.style.width = "400px";
-    imatge.alt = "imatge pricipal de l'event";
-    imatgeEvent.appendChild(imatge);
-    */
+function introduirVideoPrincipal(videos, careta) {
+
     const video = document.createElement("video");
     if (video.canPlayType) {
         if (video.canPlayType("video/mp4")) {
-            video.src = fotografia;
+            video.src = videos[0];
+        }else if (video.canPlayType("video/webm")){
+            video.src = videos[1];
         }
+        //video.poster = careta;
+        video.className = "img-fluid";
+        video.autoplay = false;
+        video.muted = false;
+        video.loop = true;
+        video.muted = false;
+        video.controls = true;
+        video.id = "videoEvent";
+        video.play();
+        imatgeEvent.appendChild(video);
+    }else{
+        const error = document.createElement("div");
+        error.innerHTML = "No ha estat possible carregar el video."
+        imatgeEvent.appendChild(error);
     }
-    video.className = "img-fluid";
-    video.autoplay = false;
-    video.muted = false;
-    video.loop = true;
-    video.muted = false;
-    video.controls = true;
-    video.id = "videoHome";
-    video.play();
 
-    imatgeEvent.appendChild(video);
+
+
 }
 
 /*
@@ -332,7 +334,7 @@ function afegirPreferits(objecte) {
         //Actualitzam el text associat al botó.
         objecte.innerHTML = "Eliminar Preferits";
     } else if (objecte.innerHTML == "Eliminar Preferits") {
-           //Llegim el localStorage.
+        //Llegim el localStorage.
         var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades'));
         //Eliminar l'ide associat a l'event.
         eventsEmmagazemats.pop(objecte.value);
@@ -347,13 +349,13 @@ function afegirPreferits(objecte) {
     }
 }
 
-function galeria(galleria){
+function galeria(galleria) {
 
     for (let index = 0; index < galleria.length; index++) {
         const element = document.createElement("div");
-        if(index == 0){
+        if (index == 0) {
             element.className = "carousel-item active";
-        }else{
+        } else {
             element.className = "carousel-item";
         }
         const imatge = document.createElement("img");

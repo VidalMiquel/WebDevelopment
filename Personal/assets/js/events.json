@@ -10,8 +10,9 @@
 		"name": "Les Festes del Vermar o Sa Vermada",
 		"latitude": "39.68811118364798",
     	"longitude": "2.8429227157750815",
-		"primaryImageOfPage": "null",
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraVermar"
 			},
@@ -30,8 +31,9 @@
 		"name": "Festa de ses Clovelles",
 		"latitude": "39.614142205585935",
     	"longitude": "3.112398979902638",
-		"primaryImageOfPage": "assets/video/sesClovelles.mp4",
 		"datosextra": {
+			"video": ["assets/video/sesClovelles.mp4" ,"assets/video/sesClovelles.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "Clovelles2022"
 			},
@@ -50,8 +52,9 @@
 		"name": "Carnaval d’estiu de Campanet",
 		"latitude": "39.776446663805416", 
     	"longitude": "2.962617237386124",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "CarnavalEstiuCampanet"
 			},
@@ -70,8 +73,9 @@
 		"name": "Rock’n Rostoll",
 		"latitude": "39.66543724374644", 
     	"longitude": "3.073209310615613",
-		"primaryImageOfPage": "assets/video/rockRostoll.mp4",
 		"datosextra": {
+			"video": ["assets/video/rockRostoll.mp4" ,"assets/video/rockRostoll.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "Rock’nRostoll"
 			},
@@ -90,8 +94,9 @@
 		"name": "Canet Rock Mallorca",
 		"latitude": "39.85308426302851", 
     	"longitude": "3.123873096656471",
-		"primaryImageOfPage": "assets/video/canetRock.mp4",
 		"datosextra": {
+			"video": ["assets/video/canetRock.mp4", "assets/video/canetRock.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "CanetRockMallorca"
 			},
@@ -110,8 +115,9 @@
 		"name": "Mallorca Life Festival",
 		"latitude": "39.50618155448475",  
     	"longitude": "2.5205295668163745",
-		"primaryImageOfPage": "assets/video/MLF.mp4",
 		"datosextra": {
+			"video": ["assets/video/MLF.mp4" ,"assets/video/MLF.webm"],
+			"careta" : "assets/img/esdeveniments/caretaMLF.jpg",
 			"socialnetworks": {
 				"hashtag": "MallorcaLifeFestival"
 			},
@@ -130,8 +136,9 @@
 		"name": "Reggaeton Beach Festival",
 		"latitude": "39.72769743804724", 
     	"longitude": "2.92302550036524",
-		"primaryImageOfPage": "assets/video/RBF.mp4",
 		"datosextra": {
+			"video": ["assets/video/RBF.mp4", "assets/video/RBF.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "RBFMallorca"
 			},
@@ -150,8 +157,9 @@
 		"name": "Es Firó de Sóller",
 		"latitude": "39.76777413327155", 
     	"longitude": "2.716680678165692",
-		"primaryImageOfPage": "assets/video/firoSoller.mp4",
 		"datosextra": {
+			"video": ["assets/video/firoSoller.mp4" ,"assets/video/firoSoller.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiroSoller"
 			},
@@ -170,8 +178,9 @@
 		"name": "Canamunt vs Canavall",
 		"latitude": "39.56561514765012", 
     	"longitude": "2.650134430963643",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video":null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "CanamuntCanavall"
 			},
@@ -190,8 +199,9 @@
 		"name": "Fira Agrícola, Ramadera i Comercial",
 		"latitude": "39.57561637607828", 
     	"longitude": "2.7156480761178097",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraSonFerriol"
 			},
@@ -210,8 +220,9 @@
 		"name": "Fira del Caragol",
 		"latitude": "39.55578198581195",
     	"longitude": "2.7786001798663964",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraCaragolSantJordi"
 			},
@@ -230,8 +241,9 @@
 		"name": "Nit de l'art",
 		"latitude": "39.57524015646539", 
     	"longitude": "2.651572161666805",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "NitArtPalma"
 			},
@@ -250,8 +262,9 @@
 		"name": "Fira de la Pedra",
 		"latitude": "39.68811118364798",
     	"longitude": "2.8439227157750815",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraPedraBinissalem"
 			},
@@ -270,8 +283,9 @@
 		"name": "Motomami World Tour 2022",
 		"latitude": "39.59161548816884", 
     	"longitude": "2.6698027528690074",
-		"primaryImageOfPage": "assets/video/motomami.mp4",
 		"datosextra": {
+			"video": ["assets/video/motomami.mp4", "assets/video/motomami.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "MWTPalma"
 			},
@@ -290,8 +304,9 @@
 		"name": "Estopa - Gira Fuego",
 		"latitude": "39.59061548816884",   
     	"longitude": "2.6698027528690000",
-		"primaryImageOfPage": null,
 		"datosextra": {
+			"video": null,
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "EstopaPalma"
 			},
@@ -310,8 +325,9 @@
 		"name": "Mobofest",
 		"latitude": "39.61799455956194",  
     	"longitude": "2.9738029562237323",
-		"primaryImageOfPage": "assets/video/mobofest.mp4",
 		"datosextra": {
+			"video": ["assets/video/mobofest.mp4", "assets/video/mobofest.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "Mobofest"
 			},
@@ -330,8 +346,9 @@
 		"name": "Much de Reig",
 		"latitude": "39.64455126833488",  
     	"longitude": "3.0110683071478825",
-		"primaryImageOfPage": "assets/video/much.mp4",
 		"datosextra": {
+			"video": ["assets/video/much.mp4", "assets/video/much.webm"],
+			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "Much"
 			},
