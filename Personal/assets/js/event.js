@@ -70,7 +70,7 @@ function visualitzarEvent(info) {
     //Localització de l'esdevenimet damunt un mapa.
     introduirMapa(info.latitude, info.longitude);
     //Fotografia principal de l'esdeveniment.
-    introduirFotografiaPrincipal(info.datosextra.gallery[0]);
+    introduirFotografiaPrincipal(info.primaryImageOfPage);
     //Informació genèrique de l'esdeveniment.
     introduirInformacioEvent(info);
     //Boto per descarregar o visualitzar programa.
@@ -260,6 +260,7 @@ function introduirIconesInformacio() {
 Mètode que integra la fotogrfia principal.
 */
 function introduirFotografiaPrincipal(fotografia) {
+   /*
     const imatge = document.createElement("img");
     imatge.className = "img-fluid";
     imatge.src = fotografia;
@@ -267,6 +268,23 @@ function introduirFotografiaPrincipal(fotografia) {
     imatge.style.width = "400px";
     imatge.alt = "imatge pricipal de l'event";
     imatgeEvent.appendChild(imatge);
+    */
+    const video = document.createElement("video");
+    if (video.canPlayType) {
+        if (video.canPlayType("video/mp4")) {
+            video.src = fotografia;
+        }
+    }
+    video.className = "img-fluid";
+    video.autoplay = false;
+    video.muted = false;
+    video.loop = true;
+    video.muted = false;
+    video.controls = true;
+    video.id = "videoHome";
+    video.play();
+
+    imatgeEvent.appendChild(video);
 }
 
 /*

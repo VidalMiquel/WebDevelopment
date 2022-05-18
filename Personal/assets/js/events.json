@@ -10,7 +10,7 @@
 		"name": "Les Festes del Vermar o Sa Vermada",
 		"latitude": "39.68811118364798",
     	"longitude": "2.8429227157750815",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "null",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiraVermar"
@@ -30,7 +30,7 @@
 		"name": "Festa de ses Clovelles",
 		"latitude": "39.614142205585935",
     	"longitude": "3.112398979902638",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/sesClovelles.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Clovelles2022"
@@ -70,7 +70,7 @@
 		"name": "Rock’n Rostoll",
 		"latitude": "39.66543724374644", 
     	"longitude": "3.073209310615613",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/rockRostoll.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Rock’nRostoll"
@@ -90,7 +90,7 @@
 		"name": "Canet Rock Mallorca",
 		"latitude": "39.85308426302851", 
     	"longitude": "3.123873096656471",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/canetRock.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "CanetRockMallorca"
@@ -110,7 +110,7 @@
 		"name": "Mallorca Life Festival",
 		"latitude": "39.50618155448475",  
     	"longitude": "2.5205295668163745",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/MLF.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "MallorcaLifeFestival"
@@ -130,7 +130,7 @@
 		"name": "Reggaeton Beach Festival",
 		"latitude": "39.72769743804724", 
     	"longitude": "2.92302550036524",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/RBF.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "RBFMallorca"
@@ -150,7 +150,7 @@
 		"name": "Es Firó de Sóller",
 		"latitude": "39.76777413327155", 
     	"longitude": "2.716680678165692",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/firoSoller.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "FiroSoller"
@@ -270,7 +270,7 @@
 		"name": "Motomami World Tour 2022",
 		"latitude": "39.59161548816884", 
     	"longitude": "2.6698027528690074",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/motomami.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "MWTPalma"
@@ -310,7 +310,7 @@
 		"name": "Mobofest",
 		"latitude": "39.61799455956194",  
     	"longitude": "2.9738029562237323",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/mobofest.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Mobofest"
@@ -330,7 +330,7 @@
 		"name": "Much de Reig",
 		"latitude": "39.64455126833488",  
     	"longitude": "3.0110683071478825",
-		"primaryImageOfPage": null,
+		"primaryImageOfPage": "assets/video/much.mp4",
 		"datosextra": {
 			"socialnetworks": {
 				"hashtag": "Much"

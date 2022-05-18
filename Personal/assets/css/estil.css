@@ -218,6 +218,10 @@ a.btn:focus {
 
 /*event individual */
 
+#videoHome{
+    width: auto;
+    height: 20rem;
+}
 
 .prova{
    background-color: #FFC700;
