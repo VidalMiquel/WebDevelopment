@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="description" content="Explicació general del propòsit de la web. Inclou un video."> 
+  <meta name="description" content="Explicació general del propòsit de la web. Inclou un video.">
   <meta name="keywords" content="usuari, publicar, trobar, esdeveniments, Mallorca, fires, verbenes, concerts">
   <meta name="author" content="Miquel Vidal Cortés">
   <meta name="copyright" content="Miquel Vidal Cortés">
@@ -23,6 +23,12 @@
   <link rel="stylesheet" href="assets/bootstrap-5.1.3-dist/css/bootstrap.css">
 
   <link href="assets/css/estil.css" rel="stylesheet">
+
+  <!-- Highcharts library for dynamic graphs -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 </head>
 
@@ -49,10 +55,10 @@
       <div class="col-md-6 ml-5 p-5 text-left" id="textHome">
         <h1 class="featurette-heading pl-3">MallorcaEvents</h1>
         <p class="lead">MallorcaEvents et permet publicar i trobar els millors esdeveniments de Mallorca.
-           Des de fires, verbens i concerts.</p>
-        <a href="cercador.html" id= "botoHome"class="btn btn-skin btn--radius-2">CERCAR EVENTS</a>
+          Des de fires, verbens i concerts.</p>
+        <a href="cercador.html" id="botoHome" class="btn btn-skin btn--radius-2">CERCAR EVENTS</a>
       </div>
-      <div class="col-md-6 p-5 text-center" id="videoHome">
+      <div class="col-md-6 p-4  text-center" id="pieChartContainer">
       </div>
     </div>
   </div>
@@ -60,7 +66,7 @@
 
 
   <footer>
-    <div class="container " >
+    <div class="container ">
       <div class="row">
         <div class="col-lg-12 border-bottom ">
           <ul class="nav nav-pills justify-content-center p-3 d-flex flex-wrap justify-content-center py-3">
