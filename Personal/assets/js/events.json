@@ -242,7 +242,7 @@
 		"latitude": "39.57524015646539", 
     	"longitude": "2.651572161666805",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/nitArt.mp4","assets/video/nitArt.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "NitArtPalma"
@@ -263,7 +263,7 @@
 		"latitude": "39.68811118364798",
     	"longitude": "2.8439227157750815",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/firaPedra.mp4", "assets/video/firaPedra.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraPedraBinissalem"

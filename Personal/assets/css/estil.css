@@ -218,6 +218,14 @@ a.btn:focus {
 
 /*event individual */
 
+#nomPlat{
+    font-size: 30px;
+}
+
+#localitzacioPlat{
+    font-size: 24px;
+}
+
 #infoEvent{
 
     padding: 4rem;

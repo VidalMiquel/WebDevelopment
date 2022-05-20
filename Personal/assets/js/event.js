@@ -232,13 +232,13 @@ Mètode que integra els icones svg de les APIs inetgrades.
 */
 function introduirIconesInformacio() {
     //Xarxes socials.
-    const logoTwitter = document.createElement('img');
-    logoTwitter.src = "assets/svg/twitter.svg"
-    logoTwitter.class = "image.fluid";
-    logoTwitter.style.height = "30px";
-    logoTwitter.style.width = "30px";
-    logoTwitter.alt = "Logotip informatiu de twitter";
-    xsocials.appendChild(logoTwitter);
+    const logoMenjar = document.createElement('img');
+    logoMenjar.src = "assets/svg/menjar.svg"
+    logoMenjar.class = "image.fluid";
+    logoMenjar.style.height = "30px";
+    logoMenjar.style.width = "30px";
+    logoMenjar.alt = "Logotip informatiu de twitter";
+    xsocials.appendChild(logoMenjar);
     //Localització.
     const logoLloc = document.createElement('img');
     logoLloc.src = "assets/svg/lloc.svg";
@@ -272,9 +272,8 @@ function introduirVideoPrincipal(videos, careta) {
         //video.poster = careta;
         video.className = "img-fluid";
         video.autoplay = false;
-        video.muted = false;
+        video.muted = true;
         video.loop = true;
-        video.muted = false;
         video.controls = true;
         video.id = "videoEvent";
         video.play();
