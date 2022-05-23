@@ -335,8 +335,12 @@ function afegirPreferits(objecte) {
     } else if (objecte.innerHTML == "Eliminar Preferits") {
         //Llegim el localStorage.
         var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades'));
+        console.log(eventsEmmagazemats);
+        console.log(objecte.value);
         //Eliminar l'ide associat a l'event.
-        eventsEmmagazemats.pop(objecte.value);
+        eventsEmmagazemats = eventsEmmagazemats.filter(item => item !== objecte.value);
+        //let amen = eventsEmmagazemats.pop(objecte.value);
+        console.log(eventsEmmagazemats);
         //Actualitzam el localStorage.
         if (eventsEmmagazemats.length) {
             localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
