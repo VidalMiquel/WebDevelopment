@@ -218,6 +218,11 @@ a.btn:focus {
 
 /*event individual */
 
+#fotoPlat{
+    width: auto;
+    height: 10rem;
+}
+
 #nomPlat{
     font-size: 30px;
 }

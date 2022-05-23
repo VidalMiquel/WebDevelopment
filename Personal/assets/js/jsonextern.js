@@ -27,7 +27,7 @@ function dataVisualizar(dades) {
         nomPlat.innerHTML = dades.gastronomia[numero].name;
         nomPlat.id = "nomPlat";
         const imatgePlat = document.createElement("img");
-        imatgePlat.src = dades.gastronomia[numero].image[0].name;
+        //imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name;
         imatgePlat.id = "fotoPlat";
         imatgePlat.className = "img-fluid";
         const localitzacioPlat =document.createElement("h2");
