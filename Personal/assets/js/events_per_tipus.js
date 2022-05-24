@@ -73,7 +73,17 @@ function dataVisualizar(data) {
                 visualitzarEvent(data_filter[0]);
             }    
         }else{
-            alert("No hi ha preferits")
+            const missatgeError = document.createElement("h1");
+            const botoEnrrere = document.createElement("a");
+            botoEnrrere.href = "cercador.html";
+            botoEnrrere.className = "btn btn-skin btn--radius-2";
+            botoEnrrere.innerHTML = "VEURE EVENTS";
+            missatgeError.className = "pb-3";
+            missatgeError.innerHTML = "No hi ha events preferits guardats";
+            eventsProximsPerTipus.className = "text-center p-5";
+            eventsProximsPerTipus.appendChild(missatgeError);
+            eventsProximsPerTipus.appendChild(botoEnrrere);
+            
         }
     }
 }
