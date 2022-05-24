@@ -113,8 +113,14 @@ function visualitzarEvent(data) {
     const text = document.createElement("p");
     const lloc = document.createElement("h3");
     const dia = document.createElement("h4");
-    dia.innerHTML = data.startDate;
+    if (data.startDate == data.endDate) {
+        dia.innerHTML = data.startDate;
+    } else {
+        dia.innerHTML = "Del " + data.startDate + " fins al " + data.endDate;
+    }
     dia.id = "diaEvent";
+    dia.className = "p-2";
+
     contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
     contenidor2.className = "shadow icon-box";
     contenidor3.className = "icon";
