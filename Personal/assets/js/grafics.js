@@ -48,7 +48,7 @@ function generatePieChart(dades) {
             fira++;
         }else if(dades[index].about == "verbena"){
             verbena++;
-        }else{
+        }else if(dades[index].about == "concert"){
             concert++;
         }
     }
