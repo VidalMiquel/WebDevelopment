@@ -84,7 +84,7 @@ function visualitzarEvent(data) {
     dia.className = "p-2";
     dia.id = "diaEvent";
     contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
-    contenidor2.className = "shadow icon-box";
+    contenidor2.className = "shadow icon-box futur";
     contenidor3.className = "icon";
     logo = document.createElement('img');
     logo.style.height = "60px";

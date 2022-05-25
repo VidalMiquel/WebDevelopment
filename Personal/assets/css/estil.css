@@ -171,8 +171,13 @@ a.btn:focus {
     margin-bottom: 0;
 }
 
-.icon-box:hover {
+.futur:hover {
     background: #efefef;
+}
+
+
+.passat:hover {
+    background: #ff000088;
 }
 
 #cercador {
