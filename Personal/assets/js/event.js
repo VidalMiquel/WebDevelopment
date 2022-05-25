@@ -372,4 +372,8 @@ function galeria(galleria) {
 }
 
 
+function botonsPlay(){
+
+}
+
 cargarDatos();

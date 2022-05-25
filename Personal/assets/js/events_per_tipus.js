@@ -104,6 +104,9 @@ function sortJSON(data, key, orden) {
 }
 
 function visualitzarEvent(data) {
+    let date = new Date();
+    var actualDate = date.toISOString();
+
     const contenidor = document.createElement("div");
     const contenidor2 = document.createElement("div");
     const contenidor3 = document.createElement("div");
@@ -122,7 +125,11 @@ function visualitzarEvent(data) {
     dia.className = "p-2";
 
     contenidor.className = "col-lg-4 pt-3 pb-3 col-md-6 d-flex align-items-stretch ";
-    contenidor2.className = "shadow icon-box";
+    if(data.endDate > actualDate){
+        contenidor2.className = "shadow icon-box futur"; 
+    }else{
+        contenidor2.className = "shadow icon-box passat";
+    }
     contenidor3.className = "icon";
     logo = document.createElement('img');
     logo.style.height = "60px";
