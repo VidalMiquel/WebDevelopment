@@ -52,10 +52,10 @@ function generatePieChart(dades) {
             concert++;
         }
     }
-
-    jsonArray.push({ name: "Concerts", y: (fira / events) * 100 });
-    jsonArray.push({ name: "Fires", y: (concert / events) * 100 });
+    jsonArray.push({ name: "Concerts", y: (concert / events) * 100 });
     jsonArray.push({ name: "Verbenes", y: (verbena / events) * 100 });
+    jsonArray.push({ name: "Fires", y: (fira / events) * 100 });
+
 
     // Build the chart
     Highcharts.chart("pieChartContainer", {
