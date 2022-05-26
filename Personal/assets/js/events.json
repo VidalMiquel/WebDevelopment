@@ -395,5 +395,47 @@
 			"gallery": ["https://www.turismepetit.com/wp-content/uploads/2020/05/castillo-cabrera.jpg%22,%22https://lh3.googleusercontent.com/p/AF1QipOwihb0xlOzKxmEKC2NTWnxxAmWZ3iaAEpmy5ab"],
 			"program": null
 		}
+	},
+	{
+		"identifier": "20",
+		"about": "fira",
+		"startDate": "2022-06-03",
+		"endDate": "2022-06-04",
+		"location": "Sa Pobla",
+		"organizer": "Ajuntament de sa Pobla",
+		"description": "La fira nocturna de la patata de sa Pobla és un event clàssic dins el panormama gastronòmic mallorquí. A la mostra gastronòmica els diferents bars, restaurants i empreses s'instal·len a la plaça Major per oferir una gran varietat de plats que tenen la patata com ingredient principal.",
+		"name": "Fira nocturna de la patata",
+		"latitude": "39.76933077780477",  
+    	"longitude": "3.0247737720893615",
+		"datosextra": {
+			"video": null,
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "patataPobla"
+			},
+			"gallery": ["assets/img/esdeveniments/firaPatata1.jpg","assets/img/esdeveniments/firaPatata2.jpg","assets/img/esdeveniments/firaPatata3.jpg"],
+			"program": "assets/img/programes/firaPatata.jpg"
+		}
+	},
+	{
+		"identifier": "21",
+		"about": "fira",
+		"startDate": "2022-06-05",
+		"endDate": "2022-06-05",
+		"location": "Lloseta",
+		"organizer": "Ajuntament de Lloseta",
+		"description": "Dedicada a la artesania local, i especialment, al calçat. Participen empreses del sector ubicades a Lloseta, les quals ofereixen demostracions de fabricacions artesanals de calçat.",
+		"name": "Fira de sa Sabata i Artesania",
+		"latitude": "39.71694102344663", 
+    	"longitude": "2.867321844743622",
+		"datosextra": {
+			"video": ["assets/video/firaLloseta.mp4","assets/video/firaLloseta.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "Much"
+			},
+			"gallery": ["assets/img/esdeveniments/firaLloseta1.jpg","assets/img/esdeveniments/firaLloseta2.jpg","assets/img/esdeveniments/firaLloseta3.jpg"],
+			"program": "assets/img/programes/firaLloseta.jpg"
+		}
 	}
 ]
