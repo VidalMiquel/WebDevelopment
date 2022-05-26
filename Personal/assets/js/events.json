@@ -437,5 +437,48 @@
 			"gallery": ["assets/img/esdeveniments/firaLloseta1.jpg","assets/img/esdeveniments/firaLloseta2.jpg","assets/img/esdeveniments/firaLloseta3.jpg"],
 			"program": "assets/img/programes/firaLloseta.jpg"
 		}
+	},
+	{
+		"identifier": "22",
+		"about": "concert",
+		"startDate": "2022-08-12",
+		"endDate": "2022-08-12",
+		"location": "Antic Aquapark Calvià",
+		"organizer": "Estrella Damm, Ajuntament de Clavià i GOIB",
+		"description": "Dani Martín torna a Mallorca amb la gira 'Qué Caro es el tiempo' per presentar 'No, no vuelve(2021), una revisió dels millors temes del grup de la seva vida'",
+		"name": "Dani Martín",
+		"latitude": "39.504518155448475",  
+    	"longitude": "2.5204295668163745",
+		"datosextra": {
+			"video": ["assets/video/daniMartin.mp4","assets/video/daniMartin.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "daniMartin"
+			},
+			"gallery": ["assets/img/esdeveniments/daniMartin1.jpg","assets/img/esdeveniments/daniMartin2.jpg","assets/img/esdeveniments/daniMartin3.jpg"],
+			"program": "assets/img/programes/daniMartin.jpeg"
+		}
+	},
+	{
+		"identifier": "23",
+		"about": "concert",
+		"startDate": "2022-06-18",
+		"endDate": "2022-06-18",
+		"location": "Inca",
+		"organizer": "Primavera Sound i Ajuntament d'Inca",
+		"description": "Després de la disolució del grup l'any 2013, Antònia Font ha renovat el seu repertori amb l'objectiu d'oferir al seu públic una actulització de so. Convertits amb un grup musical de referència del pop català, toquen a Mallorca per primer pic, des de la separació.",
+		"name": "Antònia Font",
+		"latitude": "39.72769743804724", 
+    	"longitude": "2.92302550036524",
+		"datosextra": {
+			"video": ["assets/video/antoniaFont.mp4","assets/video/antoniaFont.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "antoniaFont"
+			},
+			"gallery": ["assets/img/esdeveniments/antoniaFont1.jpg","assets/img/esdeveniments/antoniaFont2.jpg","assets/img/esdeveniments/antoniaFont3.jpg"],
+			"program": "assets/img/programes/antoniaFont.jpeg"
+		}
 	}
+	
 ]
