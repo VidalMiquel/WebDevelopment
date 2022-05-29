@@ -33,7 +33,7 @@ events que compleixin la condició dins l'html.
 */
 function dataVisualizar(data) {
     let date = new Date();
-    var actualDate = date.toISOString();
+    var actualDate = date.toISOString().split('T')[0];
     var i = 0;
     for (let index = 0; index < data.length; index++) {
         //Integram dins l'html només 6 esdeveniments.

@@ -134,7 +134,7 @@
 		"organizer": "DQuality group i Ajuntament d’Inca",
 		"description": "L’Urban Beach Festival més gran d’Europa  celebra la seva segona edició a Mallorca reunint als artistes més importants del món del Reggaeton",
 		"name": "Reggaeton Beach Festival",
-		"latitude": "39.72769743804724", 
+		"latitude": "39.72869743804724", 
     	"longitude": "2.92302550036524",
 		"datosextra": {
 			"video": ["assets/video/RBF.mp4", "assets/video/RBF.webm"],
@@ -552,8 +552,8 @@
 		"organizer": "Trui, Share Music i Danzú",
 		"description": "Inspirada en un àmbient nòrdic, 'El Row' torna per segon pic a la illa per presentar Growenlandia. Caracteritzat per la música electrònica, esperen hores de festa i ball.",
 		"name": "El Row, Growenlandia",
-		"latitude": "39.59281548816884", 
-    	"longitude": "2.6698027528690074",
+		"latitude": "39.59161548816884", 
+    	"longitude": "2.6709525528690074",
 		"datosextra": {
 			"video": ["assets/video/growenlandia.mp4","assets/video/growenlandia.webm"],
 			"careta" : "",
