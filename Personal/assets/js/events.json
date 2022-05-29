@@ -504,11 +504,11 @@
 	{
 		"identifier": "25",
 		"about": "verbena",
-		"startDate": "2022-09-02",
-		"endDate": "2022-09-02",
+		"startDate": "2022-08-28",
+		"endDate": "2022-08-28",
 		"location": "Felantix",
 		"organizer": "Ajuntament de Felanitx",
-		"description": "",
+		"description": "Per Sant Agustí, les diferents penyes felanitxeres surten al carrer a celebrar. La més coneguda, 'El Coso' es caracteritza per adorar a una quica, a més de fer passar per 'bajo palio' a les autoritats locals.",
 		"name": "El Cosso",
 		"latitude": "39.470763208490524",   
     	"longitude": "3.1468239328374685",
@@ -520,6 +520,48 @@
 			},
 			"gallery": ["assets/img/esdeveniments/cosso1.jpg","assets/img/esdeveniments/cosso2.jpg","assets/img/esdeveniments/cosso3.jpg"],
 			"program": "assets/img/programes/cosso.jpg"
+		}
+	},
+	{
+		"identifier": "26",
+		"about": "concert",
+		"startDate": "2022-06-05",
+		"endDate": "2022-06-05",
+		"location": "Son Fusteret",
+		"organizer": "Trui, Share Music i Danzú",
+		"description": "A Singermoring, a més dels sets habituals de música electrònica, podràs disfrutar dels sons més alegres i divertis: 'La gran fanfarria balcánica. Inspirat en el famòs còmic del Percebe, El Row arriba un any més a Mallorca amb l'objectiu de celebrar una de les festes més importants del moviment electònic.",
+		"name": "El Row, Singermorning",
+		"latitude": "39.59281548816884", 
+    	"longitude": "2.6698027528690074",
+		"datosextra": {
+			"video": ["assets/video/singermorning.mp4","assets/video/singermorning.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "row"
+			},
+			"gallery": ["assets/img/esdeveniments/Singermorning1.jpg","assets/img/esdeveniments/Singermorning2.jpg","assets/img/esdeveniments/Singermorning3.jpeg"],
+			"program": "assets/img/programes/row1.png"
+		}
+	},
+	{
+		"identifier": "27",
+		"about": "concert",
+		"startDate": "2022-09-04",
+		"endDate": "2022-09-04",
+		"location": "Son Fusteret",
+		"organizer": "Trui, Share Music i Danzú",
+		"description": "Inspirada en un àmbient nòrdic, 'El Row' torna per segon pic a la illa per presentar Growenlandia. Caracteritzat per la música electrònica, esperen hores de festa i ball.",
+		"name": "El Row, Growenlandia",
+		"latitude": "39.59281548816884", 
+    	"longitude": "2.6698027528690074",
+		"datosextra": {
+			"video": ["assets/video/growenlandia.mp4","assets/video/growenlandia.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "row"
+			},
+			"gallery": ["assets/img/esdeveniments/growenlandia1.jpg","assets/img/esdeveniments/growenlandia2.jpg","assets/img/esdeveniments/growenlandia3.jpg"],
+			"program": "assets/img/programes/growenlandia.jpeg"
 		}
 	}
 	
