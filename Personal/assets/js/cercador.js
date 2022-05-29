@@ -84,7 +84,7 @@ function introduirMapa(dades) {
 
     for (let index = 0; index < dades.length; index++) {
         let date = new Date();
-        var actualDate = date.toISOString();
+        var actualDate = date.toISOString().split('T')[0];
         if(dades[index].endDate >= actualDate && dades[index].location != "Cabrera"){
             introduirMarcador(map,dades[index]);
         }   
