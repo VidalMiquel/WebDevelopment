@@ -43,13 +43,16 @@ function generatePieChart(dades) {
     let concert = 0;
 
     for (let index = 0; index < dades.length; index++) {
-        events++;
+        
         if(dades[index].about == "fira"){
             fira++;
+            events++;
         }else if(dades[index].about == "verbena"){
             verbena++;
+            events++;
         }else if(dades[index].about == "concert"){
             concert++;
+            events++;
         }
     }
     jsonArray.push({ name: "Concerts", y: (concert / events) * 100 });

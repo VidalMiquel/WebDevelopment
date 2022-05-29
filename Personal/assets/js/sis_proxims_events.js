@@ -39,7 +39,7 @@ function dataVisualizar(data) {
         //Integram dins l'html només 6 esdeveniments.
         if (i < 6) {
             //Comprovam que l'event encara no ha ocorregut.
-            if (data[index].startDate >= actualDate) {
+            if (data[index].startDate >= actualDate && dades[index].location != "Cabrera") {
                 visualitzarEvent(data[index]);
                 i++;
             }
