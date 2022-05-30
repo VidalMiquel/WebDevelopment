@@ -179,7 +179,7 @@
 		"latitude": "39.56561514765012", 
     	"longitude": "2.650134430963643",
 		"datosextra": {
-			"video":null,
+			"video":["assets/video/canamuntcanavall.mp4","assets/video/canamuntcanavall.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "CanamuntCanavall"
@@ -305,7 +305,7 @@
 		"latitude": "39.59061548816884",   
     	"longitude": "2.6698027528690000",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/estopa.mp4", "assets/video/estopa.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "EstopaPalma"
