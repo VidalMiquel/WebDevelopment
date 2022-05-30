@@ -20,10 +20,19 @@ function cargarDatos() {
 
 
 function dataVisualizar(dades) {
+    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    /* 
+    LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+    JFSBGOIGB
+    RGPOREQNGQGQG
+    EGREGREGOREG
+    
+    */
 
     for (let index = 0; index < 6; index++) {
         //amem si carrega
-        let numero = generateRandomInt(0, dades.gastronomia.length());
+        //let numero = generateRandomInt(0, dades.gastronomia.length());
+        let numero = generateRandomInt(0, 70);
         if ("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name) {
             const nomPlat = document.createElement("h1");
             nomPlat.innerHTML = dades.gastronomia[numero].name;
@@ -45,7 +54,7 @@ function dataVisualizar(dades) {
             element.appendChild(localitzacioPlat);
             element.appendChild(imatgePlat);
             caruselPlats.appendChild(element);
-        }else{
+        } else {
             index--;
             console.log("no te foto");
         }
