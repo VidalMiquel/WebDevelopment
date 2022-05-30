@@ -1,6 +1,9 @@
 /*
-Mètode que realitza la crida amb l'objectiu d'obtenir el fitxer JSON especificat a la URL.
+NOM DEL FITXER: jsonextern.js
+FUNCIONALITAT: realitza la crida al json extern del company de classe. Posteriorment, ho visualitzam.
+ON TROBAM AQUESTA FUNCINALITAT: event.html
 */
+
 function cargarDatos() {
     var xmlhttp = new XMLHttpRequest();
     //Fitxer a obtenir.
@@ -20,17 +23,8 @@ function cargarDatos() {
 
 
 function dataVisualizar(dades) {
-    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    /* 
-    LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-    JFSBGOIGB
-    RGPOREQNGQGQG
-    EGREGREGOREG
-    
-    */
 
     for (let index = 0; index < 6; index++) {
-        //amem si carrega
         //let numero = generateRandomInt(0, dades.gastronomia.length());
         let numero = generateRandomInt(0, 70);
         if ("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name) {
