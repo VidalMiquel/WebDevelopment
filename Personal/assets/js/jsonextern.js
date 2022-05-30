@@ -1,3 +1,8 @@
+/*
+NOM DEL FITXER: jsonextern.js
+FUNCIONALITAT: obetenir dades del json extern. 
+ON TROBAM AQUESTA FUNCINALITAT: event.html
+*/
 
 
 function cargarDatos() {
