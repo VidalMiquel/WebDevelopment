@@ -1,8 +1,4 @@
-/*
-NOM DEL FITXER: jsonextern.js
-FUNCIONALITAT: realitza la crida al json extern del company de classe. Posteriorment, ho visualitzam.
-ON TROBAM AQUESTA FUNCINALITAT: event.html
-*/
+
 
 function cargarDatos() {
     var xmlhttp = new XMLHttpRequest();
