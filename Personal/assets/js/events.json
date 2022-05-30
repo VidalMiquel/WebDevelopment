@@ -408,7 +408,7 @@
 		"latitude": "39.76933077780477",  
     	"longitude": "3.0247737720893615",
 		"datosextra": {
-			"video": ["assets/video/nocturnapatata.mpa","assets/video/nocturnapatata.webm"],
+			"video": ["assets/video/nocturnapatata.mp4","assets/video/nocturnapatata.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "patataPobla"
