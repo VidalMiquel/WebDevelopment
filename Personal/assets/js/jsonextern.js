@@ -22,6 +22,7 @@ function cargarDatos() {
 function dataVisualizar(dades) {
 
     for (let index = 0; index < 6; index++) {
+        //amem si carrega
         let numero = generateRandomInt(0, dades.gastronomia.length());
         if ("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name) {
             const nomPlat = document.createElement("h1");
