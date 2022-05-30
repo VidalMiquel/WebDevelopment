@@ -29,13 +29,13 @@ function dataVisualizar(dades) {
     for (let index = 0; index < 6; index++) {
         let max = dades.gastronomia.length;
         let numero = generateRandomInt(0, max);
-        console.log("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name);
+        console.log("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name.substr(3));
 
         const nomPlat = document.createElement("h1");
         nomPlat.innerHTML = dades.gastronomia[numero].name;
         nomPlat.id = "nomPlat";
         const imatgePlat = document.createElement("img");
-        imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name;
+        imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name.substr(3);
         imatgePlat.id = "fotoPlat";
         imatgePlat.className = "img-fluid";
         const localitzacioPlat = document.createElement("h2");
