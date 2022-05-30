@@ -11,7 +11,7 @@
 		"latitude": "39.68811118364798",
     	"longitude": "2.8429227157750815",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/vermar.mp4", "assets/video/vermar.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraVermar"
@@ -53,7 +53,7 @@
 		"latitude": "39.776446663805416", 
     	"longitude": "2.962617237386124",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/carnavalcampanet.mp4", "assets/video/carnavalcampanet.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "CarnavalEstiuCampanet"
@@ -130,7 +130,7 @@
 		"about": "concert",
 		"startDate": "2022-07-16",
 		"endDate": "2022-07-17",
-		"location": "Inca",
+		"location": "Poliesportiu Municipal Mateu Canyelles, Inca",
 		"organizer": "DQuality group i Ajuntament d’Inca",
 		"description": "L’Urban Beach Festival més gran d’Europa  celebra la seva segona edició a Mallorca reunint als artistes més importants del món del Reggaeton",
 		"name": "Reggaeton Beach Festival",
@@ -200,7 +200,7 @@
 		"latitude": "39.57561637607828", 
     	"longitude": "2.7156480761178097",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/firasonferriol.mp4", "assets/video/firasonferriol.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraSonFerriol"
@@ -221,7 +221,7 @@
 		"latitude": "39.55578198581195",
     	"longitude": "2.7786001798663964",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/caragol.mp4", "assets/video/caragol.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "FiraCaragolSantJordi"
@@ -408,7 +408,7 @@
 		"latitude": "39.76933077780477",  
     	"longitude": "3.0247737720893615",
 		"datosextra": {
-			"video": null,
+			"video": ["assets/video/nocturnapatata.mpa","assets/video/nocturnapatata.webm"],
 			"careta" : "",
 			"socialnetworks": {
 				"hashtag": "patataPobla"
@@ -464,7 +464,7 @@
 		"about": "concert",
 		"startDate": "2022-06-18",
 		"endDate": "2022-06-18",
-		"location": "Inca",
+		"location": "Poliesportiu Municipal Mateu Canyelles, Inca",
 		"organizer": "Primavera Sound i Ajuntament d'Inca",
 		"description": "Després de la disolució del grup l'any 2013, Antònia Font ha renovat el seu repertori amb l'objectiu d'oferir al seu públic una actulització de so. Convertits amb un grup musical de referència del pop català, toquen a Mallorca per primer pic, des de la separació.",
 		"name": "Antònia Font",
