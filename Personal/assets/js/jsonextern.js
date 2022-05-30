@@ -23,9 +23,10 @@ function cargarDatos() {
     xmlhttp.send();
 }
 
-
+//Visualitzar plat del json extern.
 function dataVisualizar(dades) {
     for (let index = 0; index < 6; index++) {
+        //Obtenim plat a visualitzar.
         let numero = generateRandomInt(0, 103);
         //console.log("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name.substr(3));
         console.log(dades.gastronomia[numero]);
