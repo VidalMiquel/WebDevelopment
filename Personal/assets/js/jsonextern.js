@@ -26,18 +26,18 @@ function dataVisualizar(dades) {
 
     for (let index = 0; index < 6; index++) {
         //let numero = generateRandomInt(0, dades.gastronomia.length());
-        let numero = generateRandomInt(0, 70);
-        if ("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name) {
+       // let numero = generateRandomInt(0, 70);
+        if ("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[14].image[0].name) {
             const nomPlat = document.createElement("h1");
-            nomPlat.innerHTML = dades.gastronomia[numero].name;
+            nomPlat.innerHTML = dades.gastronomia[14].name;
             nomPlat.id = "nomPlat";
             const imatgePlat = document.createElement("img");
-            imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name;
+            imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[14].image[0].name;
             imatgePlat.id = "fotoPlat";
             imatgePlat.className = "img-fluid";
             const localitzacioPlat = document.createElement("h2");
             localitzacioPlat.id = "localitzacioPlat";
-            localitzacioPlat.innerHTML = dades.gastronomia[numero].datosextra.comunidadAutonoma;
+            localitzacioPlat.innerHTML = dades.gastronomia[14].datosextra.comunidadAutonoma;
             const element = document.createElement("div");
             if (index == 0) {
                 element.className = "carousel-item active";
@@ -68,4 +68,4 @@ function generateRandomInt(min, max) {
     return Math.floor((Math.random() * (max - min)) + min);
 }
 
-//cargarDatos();
+cargarDatos();
