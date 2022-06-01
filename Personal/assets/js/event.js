@@ -81,6 +81,8 @@ function visualitzarEvent(info) {
     introduirIconesInformacio();
     //Galeria de imatges.
     galeria(info.datosextra.gallery);
+    //Json ld.
+    crateJSONLD(info);
 }
 
 /*
@@ -372,7 +374,36 @@ function galeria(galleria) {
 }
 
 
-function botonsPlay(){
+
+function crateJSONLD(dades) {
+
+
+    console.log(dades);
+    var esdeveniments = "";
+
+    esdeveniments = dades;
+    let s = {
+        "@context": "https://schema.org",
+        "identifier": esdeveniments.identifier,
+        "about": esdeveniments.about,
+        "startDate": esdeveniments.startDate,
+        "endDate": esdeveniments.endDate,
+        "location": esdeveniments.location,
+        "organizer": esdeveniments.organizer,
+        "description": esdeveniments.description,
+        "name": esdeveniments.name,
+        "latitude": esdeveniments.latitude,
+        "longitude": esdeveniments.longitude,
+        "primaryImageOfPage": esdeveniments.primaryImageOfPage,
+        "datosextra": {
+            "socialnetworks": {
+                "hashtag": esdeveniments.datosextra.socialnetworks.hashtag
+            },
+            "gallery": [esdeveniments.datosextra.gallery[0], esdeveniments.datosextra.gallery[1], esdeveniments.datosextra.gallery[2]],
+            "program": esdeveniments.datosextra.program
+        }
+    };
+    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
 
 }
 
