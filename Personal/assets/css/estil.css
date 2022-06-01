@@ -344,7 +344,7 @@ footer {
     }   
 }
 
-@media (min-width:601px) and (max-width: 2200px) {
+@media (min-width:601px) and (max-width: 3200px) {
     #imatgecarusel{
         height: 30rem;
         width: auto;
