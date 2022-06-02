@@ -44,16 +44,11 @@ async function cargarDatos() {
 function dataVisualizar(dades) {
     
     for (let index = 0; index < 6; index++) {
-        //Obtenim plat a visualitzar.
-        const numero = generateRandomInt(0, 103);
-        //console.log(numero);
-        //console.log(dades.gastronomia[numero])
-        //console.log("https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name.substr(3));
+
+        const numero = generateRandomInt(0, 80);
         const nomPlat = document.createElement("h1");
-        //console.log(dades.gastronomia[numero].name);
         nomPlat.innerHTML = dades.gastronomia[numero].name;
         nomPlat.id = "nomPlat";
-        //console.log(nomPlat);
         const imatgePlat = document.createElement("img");
         imatgePlat.src = "https://gastronomiaesp.000webhostapp.com/" + dades.gastronomia[numero].image[0].name.substr(3);
         imatgePlat.id = "fotoPlat";

@@ -337,12 +337,8 @@ function afegirPreferits(objecte) {
     } else if (objecte.innerHTML == "Eliminar Preferits") {
         //Llegim el localStorage.
         var eventsEmmagazemats = JSON.parse(localStorage.getItem('dades'));
-        console.log(eventsEmmagazemats);
-        console.log(objecte.value);
         //Eliminar l'ide associat a l'event.
         eventsEmmagazemats = eventsEmmagazemats.filter(item => item !== objecte.value);
-        //let amen = eventsEmmagazemats.pop(objecte.value);
-        console.log(eventsEmmagazemats);
         //Actualitzam el localStorage.
         if (eventsEmmagazemats.length) {
             localStorage.setItem('dades', JSON.stringify(eventsEmmagazemats));
@@ -409,8 +405,30 @@ function createJSONLD(dades) {
 function loadJSON_LD(info){
     const script = document.createElement('script');
     script.setAttribute('type', 'application/ld+json');
-    script.textContent = JSON.stringify(info);
-    document.head.appendChild(script);
 
+    
+    esdeveniments = info;
+    let s = {
+        "@context": "https://schema.org",
+        "type": "event",
+        "about": esdeveniments.about,
+        "startDate": esdeveniments.startDate,
+        "endDate": esdeveniments.endDate,
+        "location": esdeveniments.location,
+        "organizer": esdeveniments.organizer,
+        "description": esdeveniments.description,
+        "name": esdeveniments.name,
+        "latitude": esdeveniments.latitude,
+        "longitude": esdeveniments.longitude,
+        "datosextra": {
+            "socialnetworks": {
+                "hashtag": esdeveniments.datosextra.socialnetworks.hashtag
+            },
+            "program": esdeveniments.datosextra.program
+        }
+    };
+
+    script.textContent = JSON.stringify(s);
+    document.head.appendChild(script);
 }
 cargarDatos();
