@@ -82,7 +82,7 @@ function visualitzarEvent(info) {
     //Galeria de imatges.
     galeria(info.datosextra.gallery);
     //Json ld.
-    createJSONLD(info);
+    loadJSON_LD(info);
 }
 
 /*
@@ -374,12 +374,12 @@ function galeria(galleria) {
 }
 
 
-
+/*
 function createJSONLD(dades) {
 
 
     console.log(dades);
-    var esdeveniments = "";
+
 
     esdeveniments = dades;
     let s = {
@@ -400,8 +400,17 @@ function createJSONLD(dades) {
             "program": esdeveniments.datosextra.program
         }
     };
+    console.log(s);
     document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
 
 }
+*/
 
+function loadJSON_LD(info){
+    const script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+    script.textContent = JSON.stringify(info);
+    document.head.appendChild(script);
+
+}
 cargarDatos();
