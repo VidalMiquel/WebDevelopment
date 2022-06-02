@@ -38,6 +38,7 @@ function cargarDatos() {
             dades = JSON.parse(xmlhttp.responseText);
             //Passam per paràmetre el contingut del fitxer per poder integrar-ho dins la pràctica.
             dataVisualizar(dades);
+            
         }
     };
     xmlhttp.open("GET", url, true);
@@ -61,6 +62,7 @@ function dataVisualizar(data) {
         sortJSON(data_filter, 'startDate', 'asc');
         for (let index = 0; index < data_filter.length; index++) {
             visualitzarEvent(data_filter[index]);
+            createJSONLD(data_filter[index]);
         }
     }else{
         //Cas preferits.
@@ -71,6 +73,7 @@ function dataVisualizar(data) {
                 //Filtram segons l'id.
                 var data_filter = data.filter(element => element.identifier == preferits[i]);
                 visualitzarEvent(data_filter[0]);
+                createJSONLD(data_filter[0]);
             }    
         }else{
             const missatgeError = document.createElement("h1");
@@ -166,5 +169,27 @@ function visualitzarEvent(data) {
     eventsProximsPerTipus.appendChild(contenidor);
 
 }
+
+
+function createJSONLD(dades) {
+
+
+    console.log(dades);
+    var esdeveniments = "";
+
+    esdeveniments = dades;
+    let s = {
+        "@context": "https://schema.org",
+        "about": esdeveniments.about,
+        "startDate": esdeveniments.startDate,
+        "endDate": esdeveniments.endDate,
+        "location": esdeveniments.location,
+        "description": esdeveniments.description,
+        "name": esdeveniments.name,
+    };
+    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
+
+}
+
 
 cargarDatos();

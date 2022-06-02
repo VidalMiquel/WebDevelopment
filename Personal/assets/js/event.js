@@ -82,7 +82,7 @@ function visualitzarEvent(info) {
     //Galeria de imatges.
     galeria(info.datosextra.gallery);
     //Json ld.
-    crateJSONLD(info);
+    createJSONLD(info);
 }
 
 /*
@@ -375,7 +375,7 @@ function galeria(galleria) {
 
 
 
-function crateJSONLD(dades) {
+function createJSONLD(dades) {
 
 
     console.log(dades);
@@ -384,7 +384,6 @@ function crateJSONLD(dades) {
     esdeveniments = dades;
     let s = {
         "@context": "https://schema.org",
-        "identifier": esdeveniments.identifier,
         "about": esdeveniments.about,
         "startDate": esdeveniments.startDate,
         "endDate": esdeveniments.endDate,
@@ -394,12 +393,10 @@ function crateJSONLD(dades) {
         "name": esdeveniments.name,
         "latitude": esdeveniments.latitude,
         "longitude": esdeveniments.longitude,
-        "primaryImageOfPage": esdeveniments.primaryImageOfPage,
         "datosextra": {
             "socialnetworks": {
                 "hashtag": esdeveniments.datosextra.socialnetworks.hashtag
             },
-            "gallery": [esdeveniments.datosextra.gallery[0], esdeveniments.datosextra.gallery[1], esdeveniments.datosextra.gallery[2]],
             "program": esdeveniments.datosextra.program
         }
     };
