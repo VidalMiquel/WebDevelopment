@@ -41,6 +41,7 @@ function dataVisualizar(data) {
             //Comprovam que l'event encara no ha ocorregut.
             if (data[index].startDate >= actualDate && dades[index].location != "Cabrera") {
                 visualitzarEvent(data[index]);
+                createJSONLD(data[index]);
                 i++;
             }
         } else {
@@ -120,5 +121,23 @@ function visualitzarEvent(data) {
 
 }
 
+function createJSONLD(dades) {
 
+
+    console.log(dades);
+    var esdeveniments = "";
+
+    esdeveniments = dades;
+    let s = {
+        "@context": "https://schema.org",
+        "about": esdeveniments.about,
+        "startDate": esdeveniments.startDate,
+        "endDate": esdeveniments.endDate,
+        "location": esdeveniments.location,
+        "description": esdeveniments.description,
+        "name": esdeveniments.name,
+    };
+    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
+
+}
 cargarDatos();
