@@ -123,11 +123,7 @@ function visualitzarEvent(data) {
 
 function createJSONLD(dades) {
 
-
-    console.log(dades);
-    var esdeveniments = "";
-
-    esdeveniments = dades;
+    var esdeveniments = dades;
     let s = {
         "@context": "https://schema.org",
         "about": esdeveniments.about,
@@ -137,6 +133,7 @@ function createJSONLD(dades) {
         "description": esdeveniments.description,
         "name": esdeveniments.name,
     };
+    console.log(s);
     document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
 
 }
