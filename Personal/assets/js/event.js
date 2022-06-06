@@ -275,19 +275,15 @@ function introduirVideoPrincipal(videos, careta) {
         video.className = "img-fluid";
         video.autoplay = false;
         video.muted = true;
-        video.loop = true;
+        video.loop = false;
         video.controls = true;
         video.id = "videoEvent";
-        video.play();
         imatgeEvent.appendChild(video);
     }else{
         const error = document.createElement("div");
         error.innerHTML = "No ha estat possible carregar el video."
         imatgeEvent.appendChild(error);
     }
-
-
-
 }
 
 /*
