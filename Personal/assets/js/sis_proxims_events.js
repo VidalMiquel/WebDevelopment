@@ -132,9 +132,10 @@ function loadJSON_LD(info){
 
     
     esdeveniments = info;
-    
+
     let s = {
         "@context": "https://schema.org",
+        "@type": "event",
         "about": esdeveniments.about,
         "startDate": esdeveniments.startDate,
         "endDate": esdeveniments.endDate,
