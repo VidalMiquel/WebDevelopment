@@ -5,6 +5,10 @@ FUNCIONALITAT: segons el tipus d'event a voler a visualitzar, es filtre el fitxe
             tipus, es filtre el json, i finalment, visualitzam els events determinats.
 ON TROBAM AQUESTA FUNCINALITAT:events_per_tipus.html
 */
+
+const script = document.createElement('script');
+script.setAttribute('type', 'application/ld+json');
+
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -61,9 +65,11 @@ function dataVisualizar(data) {
         //Ordenam segons la data d'inici
         sortJSON(data_filter, 'startDate', 'asc');
         for (let index = 0; index < data_filter.length; index++) {
+
             visualitzarEvent(data_filter[index]);
-            createJSONLD(data_filter[index]);
+            loadJSON_LD(data_filter[index]);
         }
+        document.head.appendChild(script);
     }else{
         //Cas preferits.
         var preferits = JSON.parse(localStorage.getItem('dades'));
@@ -73,8 +79,9 @@ function dataVisualizar(data) {
                 //Filtram segons l'id.
                 var data_filter = data.filter(element => element.identifier == preferits[i]);
                 visualitzarEvent(data_filter[0]);
-                createJSONLD(data_filter[0]);
-            }    
+                loadJSON_LD(data_filter[0]);
+            }  
+            document.head.appendChild(script);  
         }else{
             const missatgeError = document.createElement("h1");
             const botoEnrrere = document.createElement("a");
@@ -109,7 +116,7 @@ function sortJSON(data, key, orden) {
 function visualitzarEvent(data) {
     let date = new Date();
     var actualDate = date.toISOString().split('T')[0];
-    console.log(actualDate);
+
 
     const contenidor = document.createElement("div");
     const contenidor2 = document.createElement("div");
@@ -171,13 +178,11 @@ function visualitzarEvent(data) {
 }
 
 
-function createJSONLD(dades) {
+function loadJSON_LD(info){
+   
 
-
-    console.log(dades);
-    var esdeveniments = "";
-
-    esdeveniments = dades;
+    
+    esdeveniments = info;
     let s = {
         "@context": "https://schema.org",
         "about": esdeveniments.about,
@@ -185,11 +190,10 @@ function createJSONLD(dades) {
         "endDate": esdeveniments.endDate,
         "location": esdeveniments.location,
         "description": esdeveniments.description,
-        "name": esdeveniments.name,
+        "name": esdeveniments.name
     };
-    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
 
+    script.textContent += JSON.stringify(s);
 }
-
 
 cargarDatos();

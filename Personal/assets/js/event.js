@@ -366,38 +366,6 @@ function galeria(galleria) {
 }
 
 
-/*
-function createJSONLD(dades) {
-
-
-    console.log(dades);
-
-
-    esdeveniments = dades;
-    let s = {
-        "@context": "https://schema.org",
-        "about": esdeveniments.about,
-        "startDate": esdeveniments.startDate,
-        "endDate": esdeveniments.endDate,
-        "location": esdeveniments.location,
-        "organizer": esdeveniments.organizer,
-        "description": esdeveniments.description,
-        "name": esdeveniments.name,
-        "latitude": esdeveniments.latitude,
-        "longitude": esdeveniments.longitude,
-        "datosextra": {
-            "socialnetworks": {
-                "hashtag": esdeveniments.datosextra.socialnetworks.hashtag
-            },
-            "program": esdeveniments.datosextra.program
-        }
-    };
-    console.log(s);
-    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
-
-}
-*/
-
 function loadJSON_LD(info){
     const script = document.createElement('script');
     script.setAttribute('type', 'application/ld+json');
@@ -406,7 +374,6 @@ function loadJSON_LD(info){
     esdeveniments = info;
     let s = {
         "@context": "https://schema.org",
-        "type": "event",
         "about": esdeveniments.about,
         "startDate": esdeveniments.startDate,
         "endDate": esdeveniments.endDate,

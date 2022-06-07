@@ -9,6 +9,10 @@ ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
 /*
 Mètode que realitza la crida amb l'objectiu d'obtenir el fitxer JSON especificat a la URL.
 */
+
+const script = document.createElement('script');
+script.setAttribute('type', 'application/ld+json'); 
+
 function cargarDatos() {
     var xmlhttp = new XMLHttpRequest();
      //Fitxer a obtenir.
@@ -41,7 +45,7 @@ function dataVisualizar(data) {
             //Comprovam que l'event encara no ha ocorregut.
             if (data[index].startDate >= actualDate && dades[index].location != "Cabrera") {
                 visualitzarEvent(data[index]);
-                createJSONLD(data[index]);
+                loadJSON_LD(data[index]);
                 i++;
             }
         } else {
@@ -49,6 +53,7 @@ function dataVisualizar(data) {
         }
 
     }
+    document.head.appendChild(script);
 }
 
 
@@ -121,9 +126,13 @@ function visualitzarEvent(data) {
 
 }
 
-function createJSONLD(dades) {
 
-    var esdeveniments = dades;
+function loadJSON_LD(info){
+   
+
+    
+    esdeveniments = info;
+    
     let s = {
         "@context": "https://schema.org",
         "about": esdeveniments.about,
@@ -131,10 +140,10 @@ function createJSONLD(dades) {
         "endDate": esdeveniments.endDate,
         "location": esdeveniments.location,
         "description": esdeveniments.description,
-        "name": esdeveniments.name,
+        "name": esdeveniments.name
     };
-    console.log(s);
-    document.getElementById("webSemantica").innerHTML += JSON.stringify(s);
 
+    script.textContent += JSON.stringify(s);
 }
+
 cargarDatos();
