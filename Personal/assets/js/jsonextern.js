@@ -21,25 +21,6 @@ async function cargarDatos() {
 }
 
 
-
-/* function cargarDatos() {
-    var xmlhttp = new XMLHttpRequest();
-    //Fitxer a obtenir.
-    var url = "https://gastronomiaesp.000webhostapp.com/JSON/gastronomia.json";
-    //Realitzam crida.
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            //Parsejam el resultat de la crida per poder tractar les dades.
-            dades = JSON.parse(xmlhttp.responseText);
-            //Passam per paràmetre el contingut del fitxer per poder integrar-ho dins la pràctica.
-            console.log(dades);
-            dataVisualizar(dades);
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-} */
-
 //Visualitzar plat del json extern.
 function dataVisualizar(dades) {
     

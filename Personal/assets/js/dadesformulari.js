@@ -81,27 +81,23 @@ ON TROBAM AQUESTA FUNCINALITAT: esdeveniments.html
 function validateFormulari(data){
 
     if(!data.name){
-        console.log("name");
         var program =  document.getElementById("program");
         alert("Formulari no enviat per incorrectesa del camp " + "NOM");
         return false;
     }
     if(emailVerification(data.email)){
-        console.log("email");
         var correu = document.getElementById("email");
         correu.value = " ";
         alert("Formulari no enviat per incorrectesa del camp " + "EMAIL");
         return false;
     }
     if(!data.organizer){
-        console.log("organizer");
         var organitzador = document.getElementById("organizer");
         organitzador.value = " ";
         alert("Formulari no enviat per incorrectesa del camp " + "ORGANIZER");
         return false;
     }
     if(!data.startDate){
-        console.log("startDate");
         var diaInici = document.getElementById("startDate");
         diaInici.value = " ";
         alert("Formulari no enviat per incorrectesa del camp " + "DIA INICIAL");
@@ -110,29 +106,24 @@ function validateFormulari(data){
     if(dateVerification(data.startDate, data.endDate)){
         var diaAcaba =  document.getElementById("endDate");
         diaAcaba.value  = null;
-        console.log("endaDate");
         alert("Formulari no enviat per incorrectesa del camp " + "DIA FINAL");
         return false;
     }
     if(telefonVerification(data.telefon)){
-        console.log("telefon");
         var telefono =  document.getElementById("telefon");
         telefono.value = " ";
         alert("Formulari no enviat per incorrectesa del camp " + "TELEFON");
         return false;
     }
     if(data.type == "Selecciona"){
-        console.log("type");
         alert("Formulari no enviat per incorrectesa del camp " + "TIPUS");
         return false;
     }
     if(!data.program){
-        console.log("program");
         alert("Formulari no enviat per incorrectesa del camp " + "PROGRAMA");
         return false;
     }
     if(!data.description){
-        console.log("descripton");
         alert("Formulari no enviat per incorrectesa del camp " + "DESCRIPCIO");
         return false;
     }
