@@ -561,6 +561,27 @@
 			"gallery": ["assets/img/esdeveniments/growenlandia1.jpg","assets/img/esdeveniments/growenlandia2.jpg","assets/img/esdeveniments/growenlandia3.jpg"],
 			"program": "assets/img/programes/growenlandia.jpeg"
 		}
+	},
+	{
+		"identifier": "28",
+		"about": "concert",
+		"startDate": "2022-08-14",
+		"endDate": "2022-08-14",
+		"location": "Antic Aquapark Calvià",
+		"organizer": "",
+		"description": "Després d'una primera edició marcada per les restriccions de la COVID, Sa Fonda Summerfest torna amb mes ganes que mai. Els que son més fidels a les trobades setmanals a Deià, disfutaran d'un cartell amb vells coneguts. Paco Colombàs i Quantic, entre d'altres, posaran músic a un horabaixa molt esperat. ",
+		"name": "Sa Fonda Summerfest",
+		"latitude": "39.50618155448475",  
+    	"longitude": "2.5190275668163745",
+		"datosextra": {
+			"video": ["assets/video/saFondaSummerfest.mp4","assets/video/saFondaSummerfest.webm"],
+			"careta" : "",
+			"socialnetworks": {
+				"hashtag": "saFonda"
+			},
+			"gallery": ["assets/img/esdeveniments/saFondaSummerfest1.jpg","assets/img/esdeveniments/saFondaSummerfest2.jpg","assets/img/esdeveniments/saFondaSummerfest3.jpg"],
+			"program": "assets/img/programes/saFondaSummerfest.jpg"
+		}
 	}
 	
 	
